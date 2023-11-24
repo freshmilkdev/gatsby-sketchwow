@@ -11,7 +11,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby SketchWOW`,
     description: `Gatsby SketchWOW`,
-    author: `@SketchWOW`,
+    author: `@SketchWOW `,
     siteUrl: `https://sketchwow.com/`,
   },
   plugins: [
