@@ -4,3 +4,15 @@
     align-items: center;
     justify-content: space-between;
 }
+
+
+@media screen and (max-width: 767px) {
+    .logoLink {
+        max-width: 180px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .logoLink {
+        max-width: 140px;
+    }
+}

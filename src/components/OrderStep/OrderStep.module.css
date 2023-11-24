@@ -1,18 +1,40 @@
 .stepper {
     display: flex;
     align-items: center;
+    font-weight: 700;
+    font-size: 1.125rem;
+    /*font-size : clamp(16px, 3vw, 18px);*/
 }
 
-.orderStep {
-    background-color: #004dff;
-    border-radius: 30px;
-    padding: 5px 28px 5px 5px;
-    display: flex;
-    align-items: center;
+@media screen and (max-width: 767px) {
+    .stepper {
+        font-size: 0.9rem;
+    }
+    .text {
+        display: none;
+    }
+}
+@media screen and (max-width: 576px) {
+    .stepper {
+        font-size: 0.8rem;
+    }
 }
 
 .currentStep {
-    border-radius: 30px;
+    color: #000;
+    border-radius: 40px;
     background-color: #ffd858;
-    padding: 16px;
+    padding: 12px 16px;
+    margin-right: 10px;
+}
+
+.orderStep {
+    color: #fff;
+    font-weight: 500;
+    margin-left: 20px;
+    background-color: #004dff;
+    border-radius: 40px;
+    padding: 5px 28px 5px 5px;
+    display: flex;
+    align-items: center;
 }

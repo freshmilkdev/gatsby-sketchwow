@@ -8,8 +8,9 @@ import {OrderStep} from "../../OrderStep/OrderStep";
 const Header = ({siteTitle}) => (
     <Container>
         <header className={styles.header}>
-            <Link to="/" style={{position: 'relative'}}>
+            <Link to="/" className={styles.logoLink}>
                 <StaticImage
+                    // style={{maxWidth: '100%'}}
                     src="../../../images/logo.png"
                     loading="eager"
                     width={277}
