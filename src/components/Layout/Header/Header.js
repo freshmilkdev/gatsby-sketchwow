@@ -3,10 +3,11 @@ import {Link} from "gatsby"
 import {Container} from "../Container/Container";
 import {StaticImage} from "gatsby-plugin-image";
 import * as styles from './Header.module.css';
+import {OrderStep} from "../../OrderStep/OrderStep";
 
 const Header = ({siteTitle}) => (
-    <header className={styles.header}>
-        <Container>
+    <Container>
+        <header className={styles.header}>
             <Link to="/" style={{position: 'relative'}}>
                 <StaticImage
                     src="../../../images/logo.png"
@@ -16,8 +17,9 @@ const Header = ({siteTitle}) => (
                     alt=""
                 />
             </Link>
-        </Container>
-    </header>
+            <OrderStep/>
+        </header>
+    </Container>
 )
 
 export default Header

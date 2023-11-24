@@ -1,0 +1,18 @@
+.stepper {
+    display: flex;
+    align-items: center;
+}
+
+.orderStep {
+    background-color: #004dff;
+    border-radius: 30px;
+    padding: 5px 28px 5px 5px;
+    display: flex;
+    align-items: center;
+}
+
+.currentStep {
+    border-radius: 30px;
+    background-color: #ffd858;
+    padding: 16px;
+}
