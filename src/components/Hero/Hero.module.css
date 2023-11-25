@@ -83,8 +83,23 @@
     font-weight: 600;
     padding-top: 20px;
 }
+
 @media screen and (max-width: 767px) {
     .text {
         font-size: 1.3rem;
     }
+}
+
+.videoSection {
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.videoImagesLeft {
+    margin-top: 20px;
+}
+.videoImagesRight {
+    margin-top: 10px;
 }
