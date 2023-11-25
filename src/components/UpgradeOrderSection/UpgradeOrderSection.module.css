@@ -1,0 +1,82 @@
+.section {
+    background: rgb(237, 248, 255);
+    background: linear-gradient(180deg, rgba(237, 248, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.container {
+    padding: 100px 24px 0;
+}
+
+.heading {
+
+    position: relative;
+    text-align: center;
+    font-size: 3.438rem;
+    font-weight: 900;
+}
+
+.subheading {
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 700;
+    padding: 40px 0;
+}
+
+@media screen and (max-width: 992px) {
+    .subheading {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .subheading {
+        padding: 20px 0;
+    }
+}
+
+.text {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 992px) {
+    .heading {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .heading {
+        font-size: 2.2rem;
+    }
+}
+
+.headingImageLine {
+
+    position: absolute;
+    max-width: 268px;
+    top: -30px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headingHello {
+    position: absolute;
+    right: 6%;
+    top: -70px;
+}
+
+@media screen and (max-width: 1280px) {
+    .headingHello {
+        max-width: 120px;
+        top: -80px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .headingImageLine {
+        display: none;
+    }
+}

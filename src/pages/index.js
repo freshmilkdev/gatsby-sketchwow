@@ -4,13 +4,14 @@ import Layout from "../components/Layout/layout"
 import '../styles/global.css';
 import {Hero} from "../components/Hero/Hero";
 import {Steps} from "../components/Steps/Steps";
+import {UpgradeOrderSection} from "../components/UpgradeOrderSection/UpgradeOrderSection";
 
 
 const IndexPage = () => (
     <Layout>
         <Hero/>
-        <Steps/>
-
+        {/*<Steps/>*/}
+        <UpgradeOrderSection/>
     </Layout>
 )
 
