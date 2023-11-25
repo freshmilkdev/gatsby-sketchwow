@@ -1,0 +1,74 @@
+.hero {
+    text-align: center;
+}
+
+.headingWrapper {
+    font-size: 2.985rem;
+    font-weight: 900;
+    padding: 60px 0 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    padding: 0 3.5%;
+    font-size: 2.985rem;
+    font-weight: 900;
+    position: relative;
+}
+
+@media screen and (max-width: 992px) {
+    .heading {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .heading {
+        font-size: 2.2rem;
+    }
+}
+
+.image {
+    position: absolute;
+    bottom: -32%;
+    left: 0;
+    z-index: -1;
+}
+.underlineImage {
+    position: absolute;
+    bottom: -2%;
+    left: 0;
+    z-index: -1;
+}
+@media screen and (max-width: 992px) {
+    .underlineImage {
+        bottom: -8%;
+        max-width: 85%;
+    }
+}
+.subheading {
+    font-weight: 900;
+    font-size: 2.5rem;
+    max-width: 1050px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+.underline {
+    color: #004dff;
+    position: relative;
+}
+
+@media screen and (max-width: 992px) {
+    .subheading {
+        max-width: initial;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .subheading {
+        font-size: 1.8rem;
+    }
+}

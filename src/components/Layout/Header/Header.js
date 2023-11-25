@@ -10,11 +10,10 @@ const Header = ({siteTitle}) => (
         <header className={styles.header}>
             <Link to="/" className={styles.logoLink}>
                 <StaticImage
-                    // style={{maxWidth: '100%'}}
                     src="../../../images/logo.png"
                     loading="eager"
                     width={277}
-                    quality={67}
+                    quality={100}
                     alt=""
                 />
             </Link>
