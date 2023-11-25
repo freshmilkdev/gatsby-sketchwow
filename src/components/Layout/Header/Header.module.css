@@ -20,3 +20,12 @@
         max-width: 140px;
     }
 }
+
+.headerBG {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}

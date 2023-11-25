@@ -1,9 +1,9 @@
 import * as React from "react"
 import Layout from "../components/Layout/layout"
-import Seo from "../components/seo"
+
 import '../styles/global.css';
 import {Hero} from "../components/Hero/Hero";
-import {Steps} from "../components/Steps/Steps";
+
 
 const IndexPage = () => (
     <Layout>
