@@ -18,7 +18,7 @@ export const UpgradeOrderSection = () => (
         />
         <div className={styles.section}>
             <Container className={styles.container}>
-                <h2 className={styles.heading}>
+                <h2 className={`${styles.heading} font-55`}>
                     <StaticImage
                         className={styles.headingImageLine}
                         src="../../images/order-blue-line.png"
@@ -38,20 +38,20 @@ export const UpgradeOrderSection = () => (
                         alt=""
                     />
                 </h2>
-                <h3 className={styles.subheading}>SketchWow Animate!</h3>
-                <p className={styles.text}>
+                <h3 className={`${styles.subheading} font-30`}>SketchWow Animate!</h3>
+                <p className={`${styles.text} font-20`}>
                     <u><strong>For a small one-time payment of just $79</strong></u>, you can add this “SketchWow
                     Animate” add-on to your
                     SketchWow software to instantly unlock loads of animated presentation, stop-motion & animated
                     video-making awesomeness!
                 </p>
-                <p className={styles.text}>
+                <p className={`${styles.text} font-20`}>
                     With your SketchWow Animate add-on, you’ll get access to a TON of creative options to spice up your
                     diagrams… visuals… content… presentations… lessons… slideshows and videos to explain just about
                     anything – using super-cool-looking sketch animations!
                 </p>
                 <UpgradeOrderButton link={'/'}/>
-                <h4 className={styles.promo}>
+                <h4 className={`${styles.promo} font-18`}>
                     I want to add SketchWow Animate for a one-time fee of just $79.
                 </h4>
                 <DashedText>
@@ -61,6 +61,10 @@ export const UpgradeOrderSection = () => (
                     automated
                     multi-page videos and more.
                 </DashedText>
+                <h5 className={`${styles.promo} font-18`}>
+                    Best part… your animated videos won’t look like typical, animated PowerPoints that you —
+                    and your audience – have seen a million times.
+                </h5>
             </Container>
         </div>
     </section>

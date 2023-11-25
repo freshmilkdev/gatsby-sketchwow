@@ -1,6 +1,12 @@
+:root {
+    --color-dark-navy: #192a4a;
+    --color-dark-grey: #333333;
+}
+
 body {
     font-family: "Inter", sans-serif;
-    color: #192a4a;
+    color: var(--color-dark-navy);
+    padding-bottom: 60px;
     /*font-size: calc(0.75em + 1vmin);*/
 }
 
@@ -9,14 +15,62 @@ body {
         font-size: 15px;
     }
 }
+
 @media screen and (max-width: 767px) {
     html {
         font-size: 14px;
     }
 }
+
 @media screen and (max-width: 576px) {
     html {
         /* Reducing base font size will reduce all rem sizes */
         font-size: 13px;
     }
 }
+
+/*Typography*/
+.font-18 {
+    font-size: 1.125rem;
+}
+
+.font-20 {
+    font-size: 1.25rem;
+}
+
+.font-24 {
+    font-size: 1.5rem;
+}
+
+.font-30 {
+    font-size: 1.875rem;
+}
+
+.font-55 {
+    font-size: 3.438rem;
+}
+
+@media screen and (max-width: 992px) {
+    .font-30 {
+        font-size: 1.5rem;
+    }
+
+    .font-55 {
+        font-size: 2.4rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    .font-18 {
+        font-size: 1.1rem;
+    }
+
+    .font-24 {
+        font-size: 1.3rem;
+    }
+
+    .font-55 {
+        font-size: 2.1rem;
+    }
+}
+
+

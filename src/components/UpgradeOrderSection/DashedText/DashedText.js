@@ -4,7 +4,7 @@ import {StaticImage} from "gatsby-plugin-image";
 
 export const DashedText = ({children}) => (
     <div className={styles.wrapper}>
-        <div className={styles.inner}>
+        <div className={`${styles.inner} font-18`}>
             <StaticImage
                 className={styles.leftImage}
                 src="../../../images/no-thanks-left-image.png"

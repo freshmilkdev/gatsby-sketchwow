@@ -84,17 +84,17 @@
     }
 }
 
+@media screen and (max-width: 592px) {
+    .subheading {
+        font-size: 1.6rem;
+    }
+}
+
 .text {
-    font-size: 1.5rem;
     font-weight: 600;
     padding-top: 20px;
 }
 
-@media screen and (max-width: 767px) {
-    .text {
-        font-size: 1.3rem;
-    }
-}
 
 .videoSection {
     position: relative;

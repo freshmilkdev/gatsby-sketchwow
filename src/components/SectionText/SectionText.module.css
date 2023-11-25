@@ -1,10 +1,9 @@
 
 .heroText {
     padding-top: 28px;
-    font-size: 1.125rem;
     line-height: 2.2;
     font-weight: 500;
-    color: #333333;
+    color: var(--color-dark-grey);
 }
 @media screen and (max-width: 767px) {
     .heroText {

@@ -13,7 +13,7 @@ export const Hero = () => (
             <HeroHeading text='Wait! Special Offer:'/>
             <div className={styles.wrapper}>
                 <HeroSubheading/>
-                <p className={styles.text}>
+                <p className={`${styles.text} font-24`}>
                     Now It’s Easier Than Ever To Create Super-Engaging Sketch Animations, Animated
                     Presentations & Videos <span style={{textDecoration: 'underline'}}>Without</span> Being a Pro
                     Animator Or Designer!
