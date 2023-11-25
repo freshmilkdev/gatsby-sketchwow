@@ -32,7 +32,12 @@
     right: -46px;
     bottom: 2px;
 }
-
+@media screen and (max-width: 1200px) {
+    .rightImage {
+        right: -25px;
+        bottom: 2px;
+    }
+}
 @media screen and (max-width: 767px) {
     .inner {
         padding: 16px;

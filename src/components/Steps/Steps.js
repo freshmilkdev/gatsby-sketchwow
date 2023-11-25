@@ -5,30 +5,39 @@ import * as styles from './Steps.module.css';
 import {StaticImage} from "gatsby-plugin-image";
 import {SectionText} from "../SectionText/SectionText";
 
+const steps = [
+    {
+        title: 'Export',
+        description: 'Export the image from SketchWow'
+    },
+    {
+        title: 'Import',
+        description: <span>Import image into PowerPoint or your <br/> animation or whiteboard video software</span>
+    },
+    {
+        title: 'Add Animations',
+        description: 'Add all the triggers, effects (or draw paths), actions, timing, speed, transitions, etc.'
+    },
+    {
+        title: 'Repeat',
+        description: 'Repeat Steps 1 - 3 for every image, slide, page or video frame'
+    },
+]
 export const Steps = () => (
     <section>
         <Container>
             <div className={styles.wrapper}>
                 <StaticImage
                     className={styles.image}
-                    src="../../images/steps.png"
+                    src="../../images/steps-only.png"
                     loading="lazy"
-                    width={1300}
+                    width={508}
                     quality={95}
                     alt=""
                 />
                 <ul className={styles.steps}>
-                    <StepRow title='Export' description='Export the image from SketchWow'/>
-                    <StepRow title='Import'
-                             description={
-                                 <span>
-                                Import image into PowerPoint or your <br/> animation or whiteboard video software
-                            </span>
-                             }/>
-                    <StepRow title='Add Animations'
-                             description='Add all the triggers, effects (or draw paths), actions, timing, speed, transitions, etc.'/>
-                    <StepRow title='Repeat'
-                             description='Repeat Steps 1- 3 for every image, slide, page or video frame'/>
+                    {steps.map((step, ix) =>
+                        <StepRow {...step} key={`step${ix}`} index={ix + 1}/>)}
                 </ul>
             </div>
             <div style={{textAlign: "center"}}>

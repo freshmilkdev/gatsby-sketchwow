@@ -10,7 +10,7 @@ import {UpgradeOrderSection} from "../components/UpgradeOrderSection/UpgradeOrde
 const IndexPage = () => (
     <Layout>
         <Hero/>
-        {/*<Steps/>*/}
+        <Steps/>
         <UpgradeOrderSection/>
     </Layout>
 )
