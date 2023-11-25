@@ -1,0 +1,12 @@
+
+.heroText {
+    padding-top: 28px;
+    font-size: 1.125rem;
+    line-height: 2.2;
+    font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+    .heroText {
+        padding-top: 40px;
+    }
+}
