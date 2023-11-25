@@ -7,7 +7,7 @@ export const UpgradeOrderButton = ({link}) => (
     <div className={styles.wrapper}>
         <StaticImage
             className={styles.buttonArrow}
-            src="../../images/order-button-left-arrow.png"
+            src="../../../images/order-button-left-arrow.png"
             loading="lazy"
             width={98}
             quality={90}
@@ -21,7 +21,7 @@ export const UpgradeOrderButton = ({link}) => (
 
         <StaticImage
             className={styles.buttonArrow}
-            src="../../images/order-button-right-arrow.png"
+            src="../../../images/order-button-right-arrow.png"
             loading="lazy"
             width={98}
             quality={90}

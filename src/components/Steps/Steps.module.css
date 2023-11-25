@@ -1,6 +1,7 @@
 .wrapper {
     position: relative;
     margin-left: 16%;
+    padding-bottom: 40px;
 }
 
 .steps {
@@ -148,6 +149,7 @@
     display: none;
 }
 @media screen and (max-width: 720px) {
+
     .steps li h4 {
         padding-bottom: 4px;
     }
@@ -156,9 +158,11 @@
     }
     .wrapper {
         margin-left: 0;
+
     }
     .steps {
        padding: 0 20px;
+
     }
 
     .steps > li:nth-child(odd) {
