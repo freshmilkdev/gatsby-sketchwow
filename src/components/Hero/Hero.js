@@ -5,6 +5,7 @@ import * as styles from './Hero.module.css';
 import {Container} from "../Layout/Container/Container";
 import {HeroSubheading} from "./HeroSubheading";
 import {VideoSection} from "./VideoSection";
+import {HeroText} from "./HeroText";
 
 export const Hero = () => (
     <section className={styles.hero}>
@@ -14,9 +15,11 @@ export const Hero = () => (
                 <HeroSubheading/>
                 <p className={styles.text}>
                     Now It’s Easier Than Ever To Create Super-Engaging Sketch Animations, Animated
-                    Presentations & Videos <span style={{textDecoration: 'underline'}}>Without</span> Being a Pro Animator Or Designer!
+                    Presentations & Videos <span style={{textDecoration: 'underline'}}>Without</span> Being a Pro
+                    Animator Or Designer!
                 </p>
                 <VideoSection/>
+                <HeroText/>
             </div>
         </Container>
     </section>

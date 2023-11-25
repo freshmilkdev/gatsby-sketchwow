@@ -91,15 +91,76 @@
 }
 
 .videoSection {
-    margin-top: 70px;
+    position: relative;
+    margin-top: 35px;
+}
+
+
+.videoRow {
+    padding: 30px 0;
     position: relative;
     display: flex;
     justify-content: space-around;
 }
 
+.videoImagesTop {
+    position: absolute;
+    left: 28%;
+    top: -10px;
+}
+
 .videoImagesLeft {
     margin-top: 20px;
 }
+
 .videoImagesRight {
     margin-top: 10px;
+}
+
+.videoImagesBottom {
+    position: absolute;
+    right: 12%;
+    bottom: -5px;
+}
+
+.videoImagesArrow {
+    position: absolute;
+    /*max-width: 50%;*/
+    left: 2%;
+    bottom: -59px;
+}
+
+@media screen and (max-width: 1100px) {
+    .videoImagesArrow {
+        max-width: 70px;
+        left: 1%;
+        bottom: -49px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .videoImagesArrow {
+        max-width: 65px;
+        left: -2%;
+        bottom: -38px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .videoImagesArrow {
+        max-width: 50px;
+        left: -6%;
+        bottom: -20px;
+    }
+}
+
+.heroText {
+    padding-top: 28px;
+    font-size: 1.125rem;
+    line-height: 2.2;
+}
+@media screen and (max-width: 767px) {
+    .heroText {
+       padding-top: 40px;
+    }
 }
