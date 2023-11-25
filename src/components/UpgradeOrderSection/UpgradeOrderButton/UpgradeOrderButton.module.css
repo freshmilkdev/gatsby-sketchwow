@@ -1,0 +1,53 @@
+.wrapper {
+    text-align: center;
+    padding: 36px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    font-weight: 900;
+    background-color: #ffd858;
+    border-radius: 56px;
+    padding: 16px 40px;
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 24px;
+}
+
+.label {
+    font-size: 3.125rem;
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width: 992px) {
+    .label {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .button {
+        font-size: 0.7rem;
+        padding: 12px 20px;
+    }
+
+    .label {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .buttonArrow {
+        display: none;
+    }
+
+    .button {
+        margin: 0;
+    }
+}

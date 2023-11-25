@@ -3,6 +3,9 @@ import React from 'react';
 import {Container} from "../Layout/Container/Container";
 import {StaticImage} from "gatsby-plugin-image";
 import * as styles from "./UpgradeOrderSection.module.css";
+import {UpgradeOrderButton} from "./UpgradeOrderButton/UpgradeOrderButton";
+import {DashedText} from "./DashedText/DashedText";
+
 
 export const UpgradeOrderSection = () => (
     <section>
@@ -47,6 +50,17 @@ export const UpgradeOrderSection = () => (
                     diagrams… visuals… content… presentations… lessons… slideshows and videos to explain just about
                     anything – using super-cool-looking sketch animations!
                 </p>
+                <UpgradeOrderButton link={'/'}/>
+                <h4 className={styles.promo}>
+                    I want to add SketchWow Animate for a one-time fee of just $79.
+                </h4>
+                <DashedText>
+                    No thanks. I’ll pass on this SketchWow Animate add-on which includes loads of features to
+                    animate +
+                    add motion to anything I create in SketchWow and produce unique sketch animation videos,
+                    automated
+                    multi-page videos and more.
+                </DashedText>
             </Container>
         </div>
     </section>

@@ -1,6 +1,7 @@
 .section {
     background: rgb(237, 248, 255);
     background: linear-gradient(180deg, rgba(237, 248, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
 }
 
 .container {
@@ -79,4 +80,10 @@
     .headingImageLine {
         display: none;
     }
+}
+
+.promo {
+    font-size: 1.375rem;
+    text-align: center;
+    padding-bottom: 34px;
 }
