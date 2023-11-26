@@ -44,7 +44,17 @@
 
 @media screen and (max-width: 560px) {
     .buttonArrow {
-        display: none;
+        max-width: 10vw;
+    }
+
+    .button {
+        margin: 0 8px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .buttonArrow {
+        display: none !important;
     }
 
     .button {

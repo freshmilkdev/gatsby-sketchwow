@@ -152,8 +152,8 @@
     .steps li h4 {
         padding-bottom: 4px;
     }
-    .imageWrapper {
-        display: none;
+    .image {
+        display: none !important;
     }
     .wrapper {
         margin-left: 0;

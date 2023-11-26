@@ -27,17 +27,15 @@ export const Steps = () => (
     <section>
         <Container>
             <div className={styles.wrapper}>
-                <div className={styles.imageWrapper}>
-                    <StaticImage
-                        style={{position: "absolute"}}
-                        className={styles.image}
-                        src="../../images/steps-only.png"
-                        loading="lazy"
-                        width={508}
-                        quality={95}
-                        alt=""
-                    />
-                </div>
+                <StaticImage
+                    style={{position: "absolute"}}
+                    className={styles.image}
+                    src="../../images/steps-only.png"
+                    loading="lazy"
+                    width={508}
+                    quality={95}
+                    alt=""
+                />
                 <ul className={styles.steps}>
                     {steps.map((step, ix) =>
                         <StepRow {...step} key={`step${ix}`} index={ix + 1}/>)}
