@@ -23,15 +23,15 @@
 }
 
 .steps > li:nth-child(1) {
-    margin-bottom: 17%;
+    margin-bottom: 16%;
 }
 
 .steps > li:nth-child(2) {
-    margin-bottom: 14%;
+    margin-bottom: 15%;
 }
 
 .steps > li:nth-child(3) {
-    margin-bottom: 18%;
+    margin-bottom: 17%;
 }
 
 .steps li div {
@@ -56,7 +56,9 @@
     top: 0;
     left: 0;
 }
-
+.steps > li:nth-child(1) {
+    padding-top: 8px;
+}
 @media screen and (max-width: 1300px) {
     .image {
         max-width: 40vw;
@@ -76,6 +78,7 @@
 
     .steps > li:nth-child(1) {
         margin-bottom: 19%;
+        padding-top: 0;
     }
 
     .steps > li:nth-child(2) {
@@ -144,23 +147,28 @@
         margin-bottom: 15%;
     }
 }
-.listImage{
+
+.listImage {
     display: none;
 }
+
 @media screen and (max-width: 720px) {
 
     .steps li h4 {
         padding-bottom: 4px;
     }
+
     .image {
         display: none !important;
     }
+
     .wrapper {
         margin-left: 0;
 
     }
+
     .steps {
-       padding: 0 20px;
+        padding: 0 20px;
     }
 
     .steps > li:nth-child(odd) {
@@ -172,7 +180,8 @@
         align-items: center;
         margin-left: 0;
     }
-    .listImage{
+
+    .listImage {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -185,10 +194,10 @@
         font-size: 1.25rem;
         font-weight: 900;
     }
+
     .steps > li:nth-child(1),
     .steps > li:nth-child(2),
-    .steps > li:nth-child(3)
-    {
+    .steps > li:nth-child(3) {
         margin-bottom: 20px;
     }
 
