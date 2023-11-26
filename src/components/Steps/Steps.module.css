@@ -152,7 +152,7 @@
     .steps li h4 {
         padding-bottom: 4px;
     }
-    .image {
+    .imageWrapper {
         display: none;
     }
     .wrapper {
@@ -161,7 +161,6 @@
     }
     .steps {
        padding: 0 20px;
-
     }
 
     .steps > li:nth-child(odd) {
