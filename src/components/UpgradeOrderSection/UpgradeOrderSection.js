@@ -64,7 +64,7 @@ export const UpgradeOrderSection = () => (
                     multi-page videos and more.
                 </DashedText>
                 <h5 className={`${styles.promo} font-18`}>
-                    Best part… your animated videos won’t look like typical, animated PowerPoints that you —
+                    Best part… your animated videos won’t look like typical, animated PowerPoints that you — <br/>
                     and your audience – have seen a million times.
                 </h5>
             </Container>
