@@ -28,6 +28,7 @@ export const Steps = () => (
         <Container>
             <div className={styles.wrapper}>
                 <StaticImage
+                    style={{position: "absolute"}}
                     className={styles.image}
                     src="../../images/steps-only.png"
                     loading="lazy"

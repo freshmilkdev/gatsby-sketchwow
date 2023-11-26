@@ -6,6 +6,7 @@ export const DashedText = ({children}) => (
     <div className={styles.wrapper}>
         <div className={`${styles.inner} font-18`}>
             <StaticImage
+                style={{position: "absolute"}}
                 className={styles.leftImage}
                 src="../../../images/no-thanks-left-image.png"
                 loading="lazy"
@@ -15,6 +16,7 @@ export const DashedText = ({children}) => (
             />
             <p>{children}</p>
             <StaticImage
+                style={{position: "absolute"}}
                 className={styles.rightImage}
                 src="../../../images/no-thanks-right-image.png"
                 loading="lazy"

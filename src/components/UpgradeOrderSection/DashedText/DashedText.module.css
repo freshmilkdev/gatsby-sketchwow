@@ -22,13 +22,11 @@
 
 
 .leftImage {
-    position: absolute;
     left: -36px;
     top: -45px;
 }
 
 .rightImage {
-    position: absolute;
     right: -46px;
     bottom: 2px;
 }

@@ -37,8 +37,6 @@ p.text:nth-of-type(1) {
 
 
 .headingImageLine {
-
-    position: absolute;
     max-width: 268px;
     top: -30px;
     left: 0;
@@ -48,7 +46,7 @@ p.text:nth-of-type(1) {
 }
 
 .headingHello {
-    position: absolute;
+
     right: 6%;
     top: -70px;
 }

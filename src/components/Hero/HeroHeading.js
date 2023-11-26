@@ -7,6 +7,7 @@ export const HeroHeading = ({text}) => (
         <h2 className={styles.heading}>
             {text}
             <StaticImage
+                style={{position: "absolute"}}
                 className={styles.image}
                 src="../../images/special-offer-bg.png"
                 loading="lazy"

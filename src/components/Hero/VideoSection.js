@@ -6,6 +6,7 @@ import * as styles from './Hero.module.css';
 export const VideoSection = () => (
     <div className={styles.videoSection}>
         <StaticImage
+            style={{position: "absolute"}}
             className={styles.videoImagesTop}
             src="../../images/hero-video-yellow-line.png"
             loading="lazy"
@@ -44,6 +45,7 @@ export const VideoSection = () => (
             </div>
         </div>
         <StaticImage
+            style={{position: "absolute"}}
             className={styles.videoImagesBottom}
             src="../../images/hero-video-blue-line.png"
             loading="lazy"
@@ -52,6 +54,7 @@ export const VideoSection = () => (
             alt=""
         />
         <StaticImage
+            style={{position: "absolute"}}
             className={styles.videoImagesArrow}
             src="../../images/hero-video-arrow.png"
             loading="lazy"

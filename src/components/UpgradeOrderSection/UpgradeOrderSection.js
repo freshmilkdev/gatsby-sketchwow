@@ -20,6 +20,7 @@ export const UpgradeOrderSection = () => (
             <Container className={styles.container}>
                 <h2 className={`${styles.heading} font-55`}>
                     <StaticImage
+                        style={{position: "absolute"}}
                         className={styles.headingImageLine}
                         src="../../images/order-blue-line.png"
                         loading="lazy"
@@ -30,6 +31,7 @@ export const UpgradeOrderSection = () => (
 
                     <span>Say Hello To Your New BFF…</span>
                     <StaticImage
+                        style={{position: "absolute"}}
                         className={styles.headingHello}
                         src="../../images/hello.png"
                         loading="lazy"

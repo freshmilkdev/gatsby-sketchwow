@@ -36,7 +36,6 @@
 }
 
 .image {
-    position: absolute;
     bottom: -32%;
     left: 0;
     z-index: -1;
@@ -110,7 +109,6 @@
 }
 
 .videoImagesTop {
-    position: absolute;
     left: 28%;
     top: -10px;
 }
@@ -124,14 +122,11 @@
 }
 
 .videoImagesBottom {
-    position: absolute;
     right: 12%;
     bottom: -5px;
 }
 
 .videoImagesArrow {
-    position: absolute;
-    /*max-width: 50%;*/
     left: 2%;
     bottom: -59px;
 }
@@ -145,6 +140,10 @@
 }
 
 @media screen and (max-width: 767px) {
+    .videoImagesTop, .videoImagesBottom {
+        max-width: 70px;
+    }
+
     .videoImagesArrow {
         max-width: 65px;
         left: -2%;
