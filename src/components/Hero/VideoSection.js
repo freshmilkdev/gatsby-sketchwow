@@ -24,15 +24,16 @@ export const VideoSection = () => (
                     quality={95}
                     alt=""
                 />
-
             </div>
-            <StaticImage
-                src="../../images/video-placeholder.png"
-                loading="lazy"
-                width={840}
-                quality={95}
-                alt=""
-            />
+            <div className={styles.videoWrapper}>
+                <StaticImage
+                    src="../../images/banner_video2.jpg"
+                    loading="lazy"
+                    width={840}
+                    quality={75}
+                    alt=""
+                />
+            </div>
             <div>
                 <StaticImage
                     className={styles.videoImagesRight}

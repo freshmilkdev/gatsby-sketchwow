@@ -8,49 +8,36 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  siteMetadata: {
-    title: `Gatsby SketchWOW`,
-    description: `Gatsby SketchWOW`,
-    author: `@SketchWOW `,
-    siteUrl: `https://sketchwow.com/`,
-  },
-  plugins: [
-    `gatsby-plugin-image`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+    siteMetadata: {
+        title: `Gatsby SketchWOW`,
+        description: `Gatsby SketchWOW`,
+        author: `@SketchWOW `,
+        siteUrl: `https://sketchwow.com/`,
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: `gatsby-omni-font-loader`,
-      options: {
-        enableListener: true,
-        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
-        web: [
-          {
-            name: `Inter`,
-            file: `https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@400;700&display=swap`,
-          },
-        ],
-      },
-    },
-  ],
+    plugins: [
+        `gatsby-plugin-image`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: `${__dirname}/src/images`,
+            },
+        },
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `gatsby-starter-default`,
+                short_name: `starter`,
+                start_url: `/`,
+                background_color: `#663399`,
+                // This will impact how browsers show your PWA/website
+                // https://css-tricks.com/meta-theme-color-and-trickery/
+                // theme_color: `#663399`,
+                display: `minimal-ui`,
+                icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+            },
+        }
+    ],
 }

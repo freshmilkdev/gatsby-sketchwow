@@ -108,6 +108,10 @@
     justify-content: space-around;
 }
 
+.videoWrapper {
+    min-width: 84%;
+}
+
 .videoImagesTop {
     left: 28%;
     top: -10px;
