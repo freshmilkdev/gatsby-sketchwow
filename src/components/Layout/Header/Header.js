@@ -17,7 +17,7 @@ const Header = ({siteTitle}) => (
                         loading="eager"
                         width={277}
                         quality={100}
-                        alt=""
+                        alt="SketchWOW"
                     />
                 </Link>
                 <OrderStep/>
