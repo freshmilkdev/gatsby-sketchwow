@@ -7,6 +7,7 @@ export const HeroSubheading = ({text}) => (
         Imagine If… In 2 Mouse Clicks, You Can <span className={styles.underline}>
             Instantly
             <StaticImage
+                style={{position: 'absolute'}}
                 className={styles.underlineImage}
                 src="../../images/underline.png"
                 loading="lazy"
