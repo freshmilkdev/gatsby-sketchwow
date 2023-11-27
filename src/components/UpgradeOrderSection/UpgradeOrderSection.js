@@ -5,17 +5,13 @@ import {StaticImage} from "gatsby-plugin-image";
 import * as styles from "./UpgradeOrderSection.module.css";
 import {UpgradeOrderButton} from "./UpgradeOrderButton/UpgradeOrderButton";
 import {DashedText} from "./DashedText/DashedText";
+import {WaveSectionHeader} from "../WaveSectionHeader/WaveSectionHeader";
 
 
 export const UpgradeOrderSection = () => (
     <section>
-        <StaticImage
-            src="../../images/blue-bg-shape-top.png"
-            loading="lazy"
-            width={1700}
-            quality={95}
-            alt=""
-        />
+        <WaveSectionHeader/>
+
         <div className={styles.section}>
             <Container className={styles.container}>
                 <h2 className={`${styles.heading} font-55`}>
