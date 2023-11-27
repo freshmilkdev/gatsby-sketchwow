@@ -24,8 +24,9 @@
 .headerBG {
     position: absolute;
     z-index: -1;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+}
+
+.headerBG > div {
+    max-width: initial !important;
 }
