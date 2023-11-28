@@ -4,6 +4,10 @@
     display: flex;
     justify-content: space-between;
     margin: 0 68px;
+    background: #fff;
+    -webkit-box-shadow: 10px 10px 19px -3px rgba(171,168,171,0.31);
+    -moz-box-shadow: 10px 10px 19px -3px rgba(171,168,171,0.31);
+    box-shadow: 10px 10px 19px -3px rgba(171,168,171,0.31);
 }
 
 .card:nth-child(odd) {
