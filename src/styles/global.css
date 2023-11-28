@@ -53,6 +53,10 @@ body {
     font-size: 1.875rem;
 }
 
+.font-36 {
+    font-size: 2.25rem;
+}
+
 .font-55 {
     font-size: 3.438rem;
 }
@@ -82,3 +86,18 @@ body {
 }
 
 
+.font-medium {
+    font-weight: 500;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-black {
+    font-weight: 900;
+}

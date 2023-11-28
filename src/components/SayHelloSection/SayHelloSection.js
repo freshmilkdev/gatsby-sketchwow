@@ -5,6 +5,7 @@ import {Container} from "../Layout/Container/Container";
 import {StaticImage} from "gatsby-plugin-image";
 
 import {UpgradeOrderBlock} from "../UpgradeOrderBlock/UpgradeOrderBlock";
+import {ImageCard} from "./ImageCard/ImageCard";
 
 
 export const SayHelloSection = () => (
@@ -47,7 +48,37 @@ export const SayHelloSection = () => (
                     anything – using super-cool-looking sketch animations!
                 </p>
                 <UpgradeOrderBlock/>
-                <p className={`${styles.know} font-18`} style={{fontWeight: 700}}>Know what that means?</p>
+
+                <div>
+                    <p className={`${styles.know} font-18`} style={{fontWeight: 700}}>Know what that means?</p>
+                    <ImageCard image={
+                        <StaticImage
+                            style={{position: "absolute"}}
+                            src="../../images/skull-circle.png"
+                            loading="lazy"
+                            width={432}
+                            quality={95}
+                            alt=""
+                        />
+                    } heading={'No More Death-By-Power Point…  Like Ever'}
+                               content={
+                                   <>
+                                       <p>Plus, adding SketchWow Animate makes SkechWow even MORE fun to use. <br/>
+                                           <span style={{fontStyle: 'italic'}}>(... never thought that was possible, until we
+                                           proved ourselves wrong!)</span>
+                                       </p>
+
+                                       <p>There are dozens of presentation and animation tools out there… but as you’ll
+                                           soon <br/> find out, there’s NOTHING like SketchWow Animate!</p>
+                                       <p>
+                                           Keep reading to see some of the unique, eye-popping animations you can create
+                                           only <br/>
+                                           <span style={{fontWeight: 600}}><u>using SketchWow Animate!</u></span>
+                                       </p>
+                                   </>
+                               }
+                    />
+                </div>
             </Container>
         </div>
     </section>

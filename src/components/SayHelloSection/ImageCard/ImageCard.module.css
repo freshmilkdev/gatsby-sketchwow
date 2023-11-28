@@ -1,0 +1,43 @@
+.card {
+    border: 1px solid var(--color-border-grey);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 68px;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    border-radius: 40px;
+    min-width: 350px;
+}
+
+.image > div {
+    top: -94px;
+    left: -150px;
+}
+
+.textWrapper {
+    padding: 80px 40px 50px 0;
+    /*max-width: 790px;*/
+}
+
+.heading {
+    position: relative;
+    font-weight: 900;
+
+}
+.lineImage {
+    top: -36px;
+    left: 0;
+}
+.content {
+
+    /*max-width: 790px;*/
+}
+.content p {
+    line-height: 1.5;
+    margin-top: 20px;
+}
