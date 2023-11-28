@@ -6,6 +6,12 @@
     margin: 0 68px;
 }
 
+@media screen and (max-width: 767px) {
+    .card {
+        flex-direction: column;
+    }
+}
+
 .image {
     position: relative;
     overflow: hidden;
@@ -14,14 +20,47 @@
     min-width: 350px;
 }
 
+
+@media screen and (max-width: 1300px) {
+    .card {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .image {
+        min-width: 30%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .image {
+        min-height: 200px;
+        max-width: 200px;
+    }
+}
+
 .image > div {
-    top: -94px;
-    left: -150px;
+    position: absolute !important;
+    top: -90px;
+    left: -120px;
+}
+
+@media screen and (max-width: 767px) {
+    .image > div {
+        top: -94px;
+        left: -120px;
+    }
 }
 
 .textWrapper {
-    padding: 80px 40px 50px 0;
-    /*max-width: 790px;*/
+    padding: 80px 40px 50px;
+}
+
+@media screen and (max-width: 767px) {
+    .textWrapper {
+        padding: 40px 20px 20px;
+    }
 }
 
 .heading {
@@ -29,14 +68,17 @@
     font-weight: 900;
 
 }
+
 .lineImage {
     top: -36px;
     left: 0;
 }
+
 .content {
 
     /*max-width: 790px;*/
 }
+
 .content p {
     line-height: 1.5;
     margin-top: 20px;

@@ -53,7 +53,6 @@ export const SayHelloSection = () => (
                     <p className={`${styles.know} font-18`} style={{fontWeight: 700}}>Know what that means?</p>
                     <ImageCard image={
                         <StaticImage
-                            style={{position: "absolute"}}
                             src="../../images/skull-circle.png"
                             loading="lazy"
                             width={432}
