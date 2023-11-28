@@ -6,10 +6,17 @@
     margin: 0 68px;
 }
 
+.card:nth-child(odd) {
+    flex-direction: row-reverse;
+    margin-top: 40px;
+}
 
 @media screen and (max-width: 767px) {
     .card {
         flex-direction: column;
+    }
+    .card:nth-child(odd) {
+        margin-top: 20px;
     }
 }
 
@@ -17,11 +24,16 @@
     position: relative;
     overflow: hidden;
     flex: 1;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
     min-width: 350px;
 }
 
+.card:nth-child(even) .image {
+    border-top-left-radius: 40px;
+}
+
+.card:nth-child(odd) .image {
+    border-top-right-radius: 40px;
+}
 
 @media screen and (max-width: 1300px) {
     .card {
@@ -36,6 +48,7 @@
 }
 
 @media screen and (max-width: 767px) {
+
     .image {
         min-height: 250px;
         max-width: 200px;
@@ -45,13 +58,35 @@
 .image > div {
     position: absolute !important;
     top: -90px;
+}
+
+.card:nth-child(even) .image > div {
     left: -120px;
+}
+
+.card:nth-child(odd) .image > div {
+    right: -120px;
 }
 
 @media screen and (max-width: 767px) {
     .image > div {
         top: -94px;
+    }
+
+    .card:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .card:nth-child(odd) .image {
+        align-self: flex-end;
+    }
+
+    .card:nth-child(even) .image > div {
         left: -120px;
+    }
+
+    .card:nth-child(odd) .image > div {
+        right: -120px;
     }
 }
 
@@ -63,7 +98,15 @@
     .image > div {
         max-width: 200px;
         top: -44px;
+
+    }
+
+    .card:nth-child(even) .image > div {
         left: -56px;
+    }
+
+    .card:nth-child(odd) .image > div {
+        right: -56px;
     }
 }
 
@@ -88,12 +131,12 @@
     left: 0;
 }
 
-.content {
-
-    /*max-width: 790px;*/
-}
-
 .content p {
     line-height: 1.5;
     margin-top: 20px;
+}
+@media screen and (max-width: 767px) {
+    .content p {
+        margin-top: 10px;
+    }
 }
