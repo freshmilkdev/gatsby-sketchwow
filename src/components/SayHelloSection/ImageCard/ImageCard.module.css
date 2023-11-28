@@ -6,6 +6,7 @@
     margin: 0 68px;
 }
 
+
 @media screen and (max-width: 767px) {
     .card {
         flex-direction: column;
@@ -16,7 +17,8 @@
     position: relative;
     overflow: hidden;
     flex: 1;
-    border-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     min-width: 350px;
 }
 
@@ -35,7 +37,7 @@
 
 @media screen and (max-width: 767px) {
     .image {
-        min-height: 200px;
+        min-height: 250px;
         max-width: 200px;
     }
 }
@@ -50,6 +52,18 @@
     .image > div {
         top: -94px;
         left: -120px;
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .image {
+        min-height: 164px;
+    }
+
+    .image > div {
+        max-width: 200px;
+        top: -44px;
+        left: -56px;
     }
 }
 
