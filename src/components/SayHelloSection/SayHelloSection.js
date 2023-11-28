@@ -1,7 +1,6 @@
 import React from 'react';
 import {WaveHeaderSection} from "../WaveHeaderSection/WaveHeaderSection";
 import * as styles from './SayHelloSection.module.css';
-import {Container} from "../Layout/Container/Container";
 import {StaticImage} from "gatsby-plugin-image";
 
 import {UpgradeOrderBlock} from "../UpgradeOrderBlock/UpgradeOrderBlock";
@@ -9,7 +8,14 @@ import {ImageCard} from "./ImageCard/ImageCard";
 
 
 export const SayHelloSection = () => (
-    <WaveHeaderSection color={'blue'}>
+    <WaveHeaderSection color={'blue'}
+                       headerImage={<StaticImage
+                           src={"../../images/blue-bg-wave-top.png"}
+                           loading="lazy"
+                           width={1700}
+                           quality={95}
+                           alt=""
+                       />}>
         <h2 className={`${styles.heading} font-55`}>
             <StaticImage
                 style={{position: "absolute"}}

@@ -16,7 +16,7 @@
     background: linear-gradient(180deg, rgba(237, 248, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
-.section-green {
-    background: rgb(237, 248, 255);
-    background: linear-gradient(180deg, rgba(237, 248, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+.sectionGreen {
+    background: rgb(237,248,231);
+    background: linear-gradient(180deg, rgba(237,248,231,1) 0%, rgba(255,255,255,1) 100%);
 }

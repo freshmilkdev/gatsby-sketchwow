@@ -1,11 +1,17 @@
 import React from 'react';
 import {WaveHeaderSection} from "../WaveHeaderSection/WaveHeaderSection";
-import * as styles from "../SayHelloSection/SayHelloSection.module.css";
-import {Container} from "../Layout/Container/Container";
+import {StaticImage} from "gatsby-plugin-image";
 
 
 export const AnimateAnythingSection = () => (
-    <WaveHeaderSection color={'green'}>
+    <WaveHeaderSection color={'green'}
+                       headerImage={<StaticImage
+                           src={"../../images/green-bg-wave-top.png"}
+                           loading="lazy"
+                           width={1700}
+                           quality={95}
+                           alt=""
+                       />}>
         meow
     </WaveHeaderSection>
 );
