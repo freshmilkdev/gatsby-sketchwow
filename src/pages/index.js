@@ -4,14 +4,14 @@ import Seo from "../components/seo"
 import '../styles/global.css';
 import {Hero} from "../components/Hero/Hero";
 import {Steps} from "../components/Steps/Steps";
-import {UpgradeOrderSection} from "../components/UpgradeOrderSection/UpgradeOrderSection";
+import {SayHelloSection} from "../components/SayHelloSection/SayHelloSection";
 
 
 const IndexPage = () => (
     <Layout>
         <Hero/>
         <Steps/>
-        <UpgradeOrderSection/>
+        <SayHelloSection/>
     </Layout>
 )
 

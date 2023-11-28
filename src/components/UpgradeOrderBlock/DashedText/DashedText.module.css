@@ -1,5 +1,5 @@
 .wrapper {
-    border: 1px dashed #004dff;
+    border: 1px dashed var(--color-blue);
     border-radius: 10px;
     font-size: 1.125rem;
     font-weight: 500;

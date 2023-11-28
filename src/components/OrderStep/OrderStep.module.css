@@ -23,7 +23,7 @@
 .currentStep {
     color: #000;
     border-radius: 40px;
-    background-color: #ffd858;
+    background-color: var(--color-yellow);
     padding: 12px 16px;
     margin-right: 10px;
 }
@@ -32,7 +32,7 @@
     color: #fff;
     font-weight: 500;
     margin-left: 20px;
-    background-color: #004dff;
+    background-color: var(--color-blue);
     border-radius: 40px;
     padding: 5px 28px 5px 5px;
     display: flex;
