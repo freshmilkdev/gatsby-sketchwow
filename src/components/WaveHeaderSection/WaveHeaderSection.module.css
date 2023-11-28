@@ -1,0 +1,22 @@
+.wave {
+    max-width: initial !important;
+    width: 100%;
+}
+
+.wave > div {
+    max-width: initial !important;
+}
+
+.container {
+    padding: 100px 24px 0;
+}
+
+.sectionBlue {
+    background: rgb(237, 248, 255);
+    background: linear-gradient(180deg, rgba(237, 248, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.section-green {
+    background: rgb(237, 248, 255);
+    background: linear-gradient(180deg, rgba(237, 248, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}

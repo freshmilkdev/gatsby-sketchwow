@@ -5,6 +5,7 @@ import '../styles/global.css';
 import {Hero} from "../components/Hero/Hero";
 import {Steps} from "../components/Steps/Steps";
 import {SayHelloSection} from "../components/SayHelloSection/SayHelloSection";
+import {AnimateAnythingSection} from "../components/AnimateAnythingSection/AnimateAnythingSection";
 
 
 const IndexPage = () => (
@@ -12,6 +13,7 @@ const IndexPage = () => (
         <Hero/>
         <Steps/>
         <SayHelloSection/>
+        <AnimateAnythingSection/>
     </Layout>
 )
 
