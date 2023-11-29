@@ -8,14 +8,7 @@ import {ImageCard} from "./ImageCard/ImageCard";
 
 
 export const SayHelloSection = () => (
-    <WaveHeaderSection color={'blue'}
-                       headerImage={<StaticImage
-                           src={"../../images/blue-bg-wave-top.png"}
-                           loading="lazy"
-                           width={1700}
-                           quality={95}
-                           alt=""
-                       />}>
+    <WaveHeaderSection color={'blue'}>
         <h2 className={`${styles.heading} font-55`}>
             <StaticImage
                 style={{position: "absolute"}}
