@@ -25,13 +25,24 @@ export const AnimateAnythingSection = () => (
                     />
                     <h5>Highlight An Element On The Canvas</h5>
                 </div>
-                <StaticImage
-                    src="../../images/2clicks-left.png"
-                    loading="lazy"
-                    width={753}
-                    quality={90}
-                    alt=""
-                />
+                <div className={styles.leftWrapper}>
+                    <StaticImage
+                        src="../../images/2clicks-left.png"
+                        loading="lazy"
+                        width={753}
+                        quality={90}
+                        alt=""
+                    />
+                    <StaticImage
+                        className={styles.leftGraphics}
+                        style={{position: 'absolute'}}
+                        src="../../images/2clicks-left-arrows.png"
+                        loading="lazy"
+                        width={76}
+                        quality={100}
+                        alt=""
+                    />
+                </div>
             </div>
             <div className={styles.rightCol}>
                 <div className={styles.click}>

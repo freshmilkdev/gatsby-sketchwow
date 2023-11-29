@@ -18,18 +18,37 @@
     display: flex;
     justify-content: center;
 }
-.rightWrapper {
+
+.rightWrapper, .leftWrapper {
     position: relative;
 
 }
+
+.leftGraphics {
+    max-width: 34px;
+    bottom: 20px;
+    left: -20px;
+    display: none;
+}
+
 .rightGraphics {
-    max-width: 44px;
-    top: -40px;
+    max-width: 34px;
+    top: -36px;
     right: -20px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 592px) {
+    .rightGraphics {
+        max-width: 44px;
+        top: -40px;
+    }
 
+    .leftGraphics {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 767px) {
 
     .rightCol {
         padding-left: 40px;
@@ -38,7 +57,7 @@
     .rightGraphics {
         max-width: initial;
         top: -60px;
-        right: -20px;
+
     }
 
     .appScreenshots > div {
@@ -66,5 +85,13 @@
 
     .rightCol .image {
         top: 12px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .leftGraphics {
+        max-width: initial;
+        bottom: 70px;
+        left: -60px;
     }
 }
