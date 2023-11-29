@@ -23,7 +23,7 @@ export const AnimateAnythingSection = () => (
                         quality={95}
                         alt=""
                     />
-                    <h5>Highlight An Element On The Canvas</h5>
+                    <p>Highlight An Element On The Canvas</p>
                 </div>
                 <div className={styles.leftWrapper}>
                     <StaticImage
@@ -54,7 +54,7 @@ export const AnimateAnythingSection = () => (
                         quality={95}
                         alt=""
                     />
-                    <h5>Choose Your Animation Effect</h5>
+                    <p>Choose Your Animation Effect</p>
                 </div>
                 <div className={styles.rightWrapper}>
                     <StaticImage
