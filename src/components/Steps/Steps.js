@@ -47,7 +47,7 @@ export const Steps = () => (
                     <p>Here at SketchWow, we have no desire to create a dated and bloated app like PowerPoint.</p>
                     <p>Nor do we want to make complex and costly video animation apps like Adobe</p>
                     <p>We prefer to keep things simple and affordable.</p>
-                    <p style={{fontWeight: 500}}>If you love the thought of turning SketchWow into a cool animated video
+                    <p className='font-bold'>If you love the thought of turning SketchWow into a cool animated video
                         maker</p>
                     <p>(without toggling back and forth between 2-3 apps)... then I have great news!</p>
                     <p>I know you’ll be excited to hear about our new SketchWow add-on.</p>

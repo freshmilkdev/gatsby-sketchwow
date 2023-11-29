@@ -5,9 +5,9 @@
     justify-content: space-between;
     margin: 0 68px;
     background: #fff;
-    -webkit-box-shadow: 10px 10px 19px -3px rgba(171,168,171,0.31);
-    -moz-box-shadow: 10px 10px 19px -3px rgba(171,168,171,0.31);
-    box-shadow: 10px 10px 19px -3px rgba(171,168,171,0.31);
+    -webkit-box-shadow: 10px 10px 19px -3px rgba(171, 168, 171, 0.31);
+    -moz-box-shadow: 10px 10px 19px -3px rgba(171, 168, 171, 0.31);
+    box-shadow: 10px 10px 19px -3px rgba(171, 168, 171, 0.31);
 }
 
 .card:nth-child(odd) {
@@ -19,6 +19,7 @@
     .card {
         flex-direction: column;
     }
+
     .card:nth-child(odd) {
         margin-top: 20px;
     }
@@ -127,7 +128,7 @@
 .heading {
     position: relative;
     font-weight: 900;
-
+    color: var(--color-dark-navy);
 }
 
 .lineImage {
@@ -139,6 +140,7 @@
     line-height: 1.5;
     margin-top: 20px;
 }
+
 @media screen and (max-width: 767px) {
     .content p {
         margin-top: 10px;

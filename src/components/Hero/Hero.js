@@ -20,7 +20,7 @@ export const Hero = () => (
                 </p>
                 <VideoSection/>
                 <SectionText>
-                    <p style={{fontWeight: 700, fontSize: '1.375rem'}}>I know you are excited to jump-in and use SketchWow.</p>
+                    <p className={styles.know}>I know you are excited to jump-in and use SketchWow.</p>
                     <p>Before you do that… please give this a quick read…</p>
                     <p>“Can I add, edit & animate my SketchWow designs directly in PowerPoint or my video animation software?”</p>
                     <p>A couple challenges here…</p>

@@ -1,8 +1,10 @@
 .promo {
-    color: var(--color-dark-grey);
+
     font-weight: 500;
     text-align: center;
 }
-.fee{
+
+.fee {
+    color: var(--color-dark-navy);
     font-weight: 800;
 }
