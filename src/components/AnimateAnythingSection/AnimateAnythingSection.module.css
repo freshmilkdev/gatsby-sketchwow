@@ -12,7 +12,44 @@
     margin: 20px 0;
 }
 
+.bubble {
+    display: flex;
+    justify-content: center;
+}
+
+.appScreenshots {
+    padding: 40px 0;
+}
+
+.appScreenshots > * {
+    margin-bottom: 10px;
+}
+
 @media screen and (min-width: 767px) {
+    .appScreenshots {
+        display: flex;
+        padding: 0;
+    }
+
+    .appScreenshots > * {
+        margin-bottom: 0;
+    }
+
+    .rightWrapper {
+        position: relative;
+        padding-left: 20px;
+    }
+
+    .rightImageWrapper {
+
+        /*position: absolute !important;*/
+        /*min-width: 1008px;*/
+    }
+
+    .appScreenshots > div {
+        width: 50%;
+    }
+
     .clicks {
         display: flex;
         align-items: center;

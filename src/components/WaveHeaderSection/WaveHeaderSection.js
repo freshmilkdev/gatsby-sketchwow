@@ -37,7 +37,10 @@ export const WaveHeaderSection = ({children, color = 'blue'}) => {
         <section>
             <GatsbyImage image={image} alt={''}/>
             <div className={styles[`section${capitalizeFirstLetter(color)}`]}>
-                <Container className={styles.container}>{children}</Container></div>
+                <Container className={styles.container}>
+                    {children}
+                </Container>
+            </div>
         </section>
     )
 
