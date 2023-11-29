@@ -5,21 +5,11 @@ import {StaticImage} from "gatsby-plugin-image";
 
 import {UpgradeOrderBlock} from "../UpgradeOrderBlock/UpgradeOrderBlock";
 import {ImageCard} from "./ImageCard/ImageCard";
-
+import {LineHeading} from "../LineHeading/LineHeading";
 
 export const SayHelloSection = () => (
     <WaveHeaderSection color={'blue'}>
-        <h2 className={`${styles.heading} font-55`}>
-            <StaticImage
-                style={{position: "absolute"}}
-                className={styles.headingImageLine}
-                src="../../images/order-blue-line.png"
-                loading="lazy"
-                width={268}
-                quality={95}
-                alt=""
-            />
-
+        <LineHeading>
             <span>Say Hello To Your New BFF…</span>
             <StaticImage
                 style={{position: "absolute"}}
@@ -30,7 +20,7 @@ export const SayHelloSection = () => (
                 quality={95}
                 alt=""
             />
-        </h2>
+        </LineHeading>
         <h3 className={`${styles.subheading} font-30`}>SketchWow Animate!</h3>
         <p className={`${styles.text} font-20`}>
             <u><strong>For a small one-time payment of just $79</strong></u>, you can add this “SketchWow

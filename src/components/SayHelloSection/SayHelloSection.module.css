@@ -7,12 +7,6 @@
     padding: 100px 24px 0;
 }
 
-.heading {
-    position: relative;
-    text-align: center;
-    font-weight: 900;
-}
-
 .subheading {
     text-align: center;
     font-weight: 700;
@@ -35,32 +29,21 @@ p.text:nth-of-type(1) {
     margin-bottom: 30px;
 }
 
-
-.headingImageLine {
-    max-width: 268px;
-    top: -30px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .headingHello {
-
     right: 6%;
-    top: -70px;
+    top: -40px;
 }
 
 @media screen and (max-width: 1280px) {
     .headingHello {
         max-width: 120px;
-        top: -80px;
     }
 }
 
-@media screen and (max-width: 650px) {
-    .headingImageLine {
-        display: none;
+@media screen and (max-width: 767px) {
+    .headingHello {
+
+        top: -80px;
     }
 }
 

@@ -1,0 +1,17 @@
+.heading {
+    position: relative;
+    text-align: center;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headingImageLine {
+    display: inline-block;
+    max-width: 268px;
+}
+@media screen and (max-width: 650px) {
+    .headingImageLine {
+        /*display: none;*/
+    }
+}

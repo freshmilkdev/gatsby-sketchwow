@@ -31,7 +31,7 @@ export const WaveHeaderSection = ({children, color = 'blue'}) => {
             }
         }
     `)
-    console.log(data)
+
     const image = getImage(data[`${color}Wave`])
     return (
         <section>
