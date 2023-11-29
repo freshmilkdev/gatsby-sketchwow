@@ -3,11 +3,13 @@
     border-radius: 40px;
     display: flex;
     justify-content: space-between;
+    position: relative;
     margin: 0 68px;
     background: #fff;
     -webkit-box-shadow: 10px 10px 19px -3px rgba(171, 168, 171, 0.31);
     -moz-box-shadow: 10px 10px 19px -3px rgba(171, 168, 171, 0.31);
     box-shadow: 10px 10px 19px -3px rgba(171, 168, 171, 0.31);
+    z-index: 10;
 }
 
 .card:nth-child(odd) {
