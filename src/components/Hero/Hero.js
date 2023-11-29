@@ -19,7 +19,7 @@ export const Hero = () => (
                     Animator Or Designer!
                 </p>
                 <VideoSection/>
-                <SectionText>
+                <SectionText className={styles.sectionText} textGap>
                     <p className={styles.know}>I know you are excited to jump-in and use SketchWow.</p>
                     <p>Before you do that… please give this a quick read…</p>
                     <p>“Can I add, edit & animate my SketchWow designs directly in PowerPoint or my video animation software?”</p>

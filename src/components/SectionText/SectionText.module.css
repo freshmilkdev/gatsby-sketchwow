@@ -1,13 +1,17 @@
 
-.heroText {
-    padding-top: 28px;
-    line-height: 2.4;
+.sectionText {
     font-weight: 500;
     color: var(--color-dark-grey);
+    text-align: center;
+    line-height: 1.5;
 }
+
+.textGap p {
+    margin-bottom: 28px;
+}
+
 @media screen and (max-width: 767px) {
-    .heroText {
-        line-height: 2.2;
-        padding-top: 40px;
+    .textGap p {
+        margin-bottom: 14px;
     }
 }

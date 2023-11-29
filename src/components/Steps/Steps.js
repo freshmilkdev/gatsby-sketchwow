@@ -42,7 +42,7 @@ export const Steps = () => (
                 </ul>
             </div>
             <div style={{textAlign: "center"}}>
-                <SectionText>
+                <SectionText textGap>
                     <p>Can you see how this wastes a lot of time?</p>
                     <p>Here at SketchWow, we have no desire to create a dated and bloated app like PowerPoint.</p>
                     <p>Nor do we want to make complex and costly video animation apps like Adobe</p>

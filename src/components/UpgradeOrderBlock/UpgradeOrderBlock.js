@@ -2,6 +2,7 @@ import React from 'react';
 import * as styles from "./UpgradeOrderBlock.module.css";
 import {UpgradeOrderButton} from "./UpgradeOrderButton/UpgradeOrderButton";
 import {DashedText} from "./DashedText/DashedText";
+import {SectionText} from "../SectionText/SectionText";
 
 
 export const UpgradeOrderBlock = () => (
@@ -17,9 +18,9 @@ export const UpgradeOrderBlock = () => (
             automated
             multi-page videos and more.
         </DashedText>
-        <h5 className={`${styles.promo} font-18`}>
+        <SectionText>
             Best part… your animated videos won’t look like typical, animated PowerPoints that you — <br/>
             and your audience – have seen a million times.
-        </h5>
+        </SectionText>
     </>
 );

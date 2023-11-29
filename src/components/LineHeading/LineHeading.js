@@ -23,6 +23,9 @@ export const LineHeading = ({lineColor = 'blue', children}) => {
             green: file(relativePath: { eq: "wavy-green-line.png" }) {
                 ...wavyLineImage
             }
+            yellow: file(relativePath: { eq: "wavy-yellow-line.png" }) {
+                ...wavyLineImage
+            }
         }
     `)
     const image = getImage(data[lineColor]);

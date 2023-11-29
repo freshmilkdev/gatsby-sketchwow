@@ -6,6 +6,7 @@ import {Hero} from "../components/Hero/Hero";
 import {Steps} from "../components/Steps/Steps";
 import {SayHelloSection} from "../components/SayHelloSection/SayHelloSection";
 import {AnimateAnythingSection} from "../components/AnimateAnythingSection/AnimateAnythingSection";
+import {WatchDesignsSection} from "../components/WatchDesignsSection/WatchDesignsSection";
 
 
 const IndexPage = () => (
@@ -14,6 +15,7 @@ const IndexPage = () => (
         <Steps/>
         <SayHelloSection/>
         <AnimateAnythingSection/>
+        <WatchDesignsSection/>
     </Layout>
 )
 

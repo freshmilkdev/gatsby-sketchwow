@@ -1,7 +1,7 @@
 .wrapper {
     position: relative;
     margin-left: 16%;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
 }
 
 .steps {
@@ -63,6 +63,9 @@
 }
 
 @media screen and (max-width: 1300px) {
+    .wrapper{
+        padding-bottom: 50px;
+    }
     .image {
         max-width: 40vw;
     }
