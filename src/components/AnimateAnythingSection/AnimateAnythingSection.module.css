@@ -1,3 +1,38 @@
-.afterHeading{
+.afterHeading {
     padding-top: 8px;
+}
+
+.click {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image {
+    margin: 20px 0;
+}
+
+@media screen and (min-width: 767px) {
+    .clicks {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .click {
+        padding: 50px 0 50px 152px;
+        position: relative;
+        display: block;
+    }
+
+    .image {
+        position: absolute !important;
+        top: 30px;
+        left: 0;
+        margin: 0;
+    }
+
+    .click:nth-child(2) > .image {
+        top: 12px;
+    }
 }
