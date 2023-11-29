@@ -1,0 +1,32 @@
+.row {
+
+}
+
+.row > div {
+    margin-bottom: 40px;
+}
+
+.jingle {
+    text-align: center;
+    padding-top: 40px;
+}
+
+@media screen and (min-width: 767px) {
+    .jingle {
+        text-align: center;
+        padding-top: 80px;
+    }
+    .row {
+        display: flex;
+        align-items: flex-end;
+
+    }
+
+    .row > div {
+        margin-bottom: 70px;
+    }
+
+    .left {
+        margin-right: 50px;
+    }
+}
