@@ -53,6 +53,15 @@ export const AnimateAnythingSection = () => (
                         quality={100}
                         alt=""
                     />
+                    <StaticImage
+                        className={styles.rightGraphics}
+                        style={{position: 'absolute'}}
+                        src="../../images/2clicks-right-arrows.png"
+                        loading="lazy"
+                        width={66}
+                        quality={100}
+                        alt=""
+                    />
                 </div>
             </div>
         </div>
