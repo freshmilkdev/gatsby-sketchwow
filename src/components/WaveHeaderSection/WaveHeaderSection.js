@@ -21,19 +21,19 @@ export const WaveHeaderSection = ({children, color = 'blue'}) => {
             blueWave: file(relativePath: { eq: "blue-bg-wave-top.png" }) {
                 ...waveImage
             }
-            greenWave: file(relativePath: { eq: "green-bg-wave-top.png" }) {
+            greenWave: file(relativePath: { eq: "wave-bg/green-bg-wave-top.png" }) {
                 ...waveImage
             }
-            greyWave: file(relativePath: { eq: "grey-bg-wave-top.png" }) {
+            greyWave: file(relativePath: { eq: "wave-bg/grey-bg-wave-top.png" }) {
                 ...waveImage
             }
-            tealWave: file(relativePath: { eq: "teal-bg-wave-top.png" }) {
+            tealWave: file(relativePath: { eq: "wave-bg/teal-bg-wave-top.png" }) {
                 ...waveImage
             }
-            sandWave: file(relativePath: { eq: "sand-bg-wave-top.png" }) {
+            sandWave: file(relativePath: { eq: "wave-bg/sand-bg-wave-top.png" }) {
                 ...waveImage
             }
-            pinkWave: file(relativePath: { eq: "pink-bg-wave-top.png" }) {
+            pinkWave: file(relativePath: { eq: "wave-bg/pink-bg-wave-top.png" }) {
                 ...waveImage
             }
         }

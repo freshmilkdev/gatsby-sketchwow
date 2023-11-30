@@ -1,7 +1,7 @@
 import React from 'react';
 import {ImageCard} from "./ImageCard/ImageCard";
 import {StaticImage} from "gatsby-plugin-image";
-import * as styles from './SayHelloSection.module.css';
+
 
 export const ImageCardList = () => (
     <>

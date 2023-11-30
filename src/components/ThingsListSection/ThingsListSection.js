@@ -4,10 +4,10 @@ import {Container} from "../Layout/Container/Container";
 import {LineHeading} from "../LineHeading/LineHeading";
 
 export const ThingsListSection = () => (
-    <section>
+    <section className={styles.section}>
         <Container>
-            <LineHeading lineColor='purple'>
-                <span>What Are All the Things You Can <br/> Create Using SketchWow Animate?</span>
+            <LineHeading lineColor='purple' tag={'h5'}>
+                <p className={`${styles.offset} font-24 font-bold`}>Multi-frame animated GIFs or MP4 videos</p>
             </LineHeading>
         </Container>
     </section>
