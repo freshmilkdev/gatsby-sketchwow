@@ -8,7 +8,7 @@ import {SayHelloSection} from "../components/SayHelloSection/SayHelloSection";
 import {AnimateAnythingSection} from "../components/AnimateAnythingSection/AnimateAnythingSection";
 import {WatchDesignsSection} from "../components/WatchDesignsSection/WatchDesignsSection";
 import {BestOfAllSection} from "../components/BestOfAllSection/BestOfAllSection";
-import {ThingsListSection} from "../components/ThingsListSection/ThingsListSection";
+import {FeaturesSection} from "../components/FeaturesSection/FeaturesSection";
 
 
 const IndexPage = () => (
@@ -19,7 +19,7 @@ const IndexPage = () => (
         <AnimateAnythingSection/>
         <WatchDesignsSection/>
         <BestOfAllSection/>
-        <ThingsListSection/>
+        <FeaturesSection/>
     </Layout>
 )
 

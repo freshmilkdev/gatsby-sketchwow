@@ -18,7 +18,7 @@ export const waveImage = graphql`
 export const WaveHeaderSection = ({children, color = 'blue'}) => {
     const data = useStaticQuery(graphql`
         query {
-            blueWave: file(relativePath: { eq: "blue-bg-wave-top.png" }) {
+            blueWave: file(relativePath: { eq: "wave-bg/blue-bg-wave-top.png" }) {
                 ...waveImage
             }
             greenWave: file(relativePath: { eq: "wave-bg/green-bg-wave-top.png" }) {
