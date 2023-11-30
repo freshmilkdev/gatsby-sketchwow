@@ -8,6 +8,7 @@ import {SayHelloSection} from "../components/SayHelloSection/SayHelloSection";
 import {AnimateAnythingSection} from "../components/AnimateAnythingSection/AnimateAnythingSection";
 import {WatchDesignsSection} from "../components/WatchDesignsSection/WatchDesignsSection";
 import {BestOfAllSection} from "../components/BestOfAllSection/BestOfAllSection";
+import {AnimateThingsGrid} from "../components/AnimateThingsGrid/AnimateThingsGrid";
 import {FeaturesSection} from "../components/FeaturesSection/FeaturesSection";
 
 
@@ -19,6 +20,7 @@ const IndexPage = () => (
         <AnimateAnythingSection/>
         <WatchDesignsSection/>
         <BestOfAllSection/>
+        <AnimateThingsGrid/>
         <FeaturesSection/>
     </Layout>
 )

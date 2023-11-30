@@ -1,5 +1,5 @@
 import React from 'react';
-import * as styles from './FeaturesSection.module.css'
+import * as styles from './AnimateThingsGrid.module.css'
 
 export const Feature = ({icon, title}) => (
     <div className={styles.featureWrapper}>

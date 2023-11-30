@@ -36,7 +36,7 @@ export const AnimateAnythingSection = () => (
                     <StaticImage
                         className={styles.leftGraphics}
                         style={{position: 'absolute'}}
-                        src="../../images/2clicks-left-arrows.png"
+                        src="../../images/pointer-left.png"
                         loading="lazy"
                         width={76}
                         quality={100}
@@ -67,7 +67,7 @@ export const AnimateAnythingSection = () => (
                     <StaticImage
                         className={styles.rightGraphics}
                         style={{position: 'absolute'}}
-                        src="../../images/2clicks-right-arrows.png"
+                        src="../../images/pointer-right.png"
                         loading="lazy"
                         width={66}
                         quality={100}

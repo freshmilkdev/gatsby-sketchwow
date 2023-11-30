@@ -8,9 +8,9 @@ export const DashedText = ({children}) => (
             <StaticImage
                 style={{position: "absolute"}}
                 className={styles.leftImage}
-                src="../../../images/no-thanks-left-image.png"
+                src="../../../images/pointer-left.png"
                 loading="lazy"
-                width={52}
+                width={50}
                 quality={95}
                 alt=""
             />
@@ -18,7 +18,7 @@ export const DashedText = ({children}) => (
             <StaticImage
                 style={{position: "absolute"}}
                 className={styles.rightImage}
-                src="../../../images/no-thanks-right-image.png"
+                src="../../../images/pointer-right.png"
                 loading="lazy"
                 width={37}
                 quality={95}
