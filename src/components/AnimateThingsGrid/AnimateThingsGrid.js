@@ -9,7 +9,7 @@ import {ThingItem} from "./ThingItem";
 export const AnimateThingsGrid = () => (
     <section className={styles.section}>
         <Container>
-            <LineHeading lineColor='purple' tag={'h5'}>
+            <LineHeading lineColor='purple' tag={'h3'}>
                 <p className={`${styles.offset} font-24 font-bold`}>Multi-frame animated GIFs or MP4 videos</p>
             </LineHeading>
             <div className={styles.features}>
