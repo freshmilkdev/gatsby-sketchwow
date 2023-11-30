@@ -11,7 +11,7 @@ import {ImageCardList} from "./ImageCardList";
 export const SayHelloSection = () => (
     <WaveHeaderSection color={'blue'}>
         <LineHeading>
-            <span>Say Hello To Your New BFF…</span>
+            <span>Say Hello To Your New BFF...</span>
             <StaticImage
                 style={{position: "absolute"}}
                 className={styles.headingHello}
@@ -31,7 +31,7 @@ export const SayHelloSection = () => (
         </p>
         <p className={`${styles.text} font-20`}>
             With your SketchWow Animate add-on, you’ll get access to a TON of creative options to spice up your
-            diagrams… visuals… content… presentations… lessons… slideshows and videos to explain just about
+            diagrams... visuals... content... presentations... lessons... slideshows and videos to explain just about
             anything – using super-cool-looking sketch animations!
         </p>
         <UpgradeOrderBlock/>

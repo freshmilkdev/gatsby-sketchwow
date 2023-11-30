@@ -13,14 +13,14 @@ export const ImageCardList = () => (
                 quality={95}
                 alt=""
             />}
-                   heading={'No More Death-By-Power Point…  Like Ever'}
+                   heading={'No More Death-By-Power Point...  Like Ever'}
                    content={<>
                        <p>Plus, adding SketchWow Animate makes SkechWow even MORE fun to use. <br/>
                            <span style={{fontStyle: 'italic'}}>(... never thought that was possible, until we
                                            proved ourselves wrong!)</span>
                        </p>
 
-                       <p>There are dozens of presentation and animation tools out there… but as you’ll
+                       <p>There are dozens of presentation and animation tools out there... but as you’ll
                            soon <br/> find out, there’s NOTHING like SketchWow Animate!</p>
                        <p>
                            Keep reading to see some of the unique, eye-popping animations you can create
@@ -43,7 +43,7 @@ export const ImageCardList = () => (
                            enabled
                            in SketchWow on the top toolbar.</p>
 
-                       <p>Click it… that’s when the magic happens!</p>
+                       <p>Click it... that’s when the magic happens!</p>
                        <p>
                            Next, you can add animation and movement to any element, shape, text, page or
                            imported image.

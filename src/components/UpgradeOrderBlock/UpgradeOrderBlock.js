@@ -19,7 +19,7 @@ export const UpgradeOrderBlock = () => (
             multi-page videos and more.
         </DashedText>
         <SectionText>
-            Best part… your animated videos won’t look like typical, animated PowerPoints that you — <br/>
+            Best part... your animated videos won’t look like typical, animated PowerPoints that you — <br/>
             and your audience – have seen a million times.
         </SectionText>
     </>

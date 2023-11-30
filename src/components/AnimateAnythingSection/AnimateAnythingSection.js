@@ -29,8 +29,8 @@ export const AnimateAnythingSection = () => (
                     <StaticImage
                         src="../../images/2clicks-left.png"
                         loading="lazy"
-                        width={753}
-                        quality={90}
+                        width={782}
+                        quality={98}
                         alt=""
                     />
                     <StaticImage

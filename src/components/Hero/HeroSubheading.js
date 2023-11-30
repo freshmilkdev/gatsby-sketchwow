@@ -4,7 +4,7 @@ import {StaticImage} from "gatsby-plugin-image";
 
 export const HeroSubheading = ({text}) => (
     <h3 className={styles.subheading}>
-        Imagine If… In 2 Mouse Clicks, You Can <span className={styles.underline}>
+        Imagine If... In 2 Mouse Clicks, You Can <span className={styles.underline}>
             Instantly
             <StaticImage
                 style={{position: 'absolute'}}
