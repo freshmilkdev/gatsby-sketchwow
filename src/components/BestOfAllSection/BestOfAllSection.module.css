@@ -2,7 +2,7 @@
     padding-top: 40px;
 }
 
-@media screen and (max-width: 592px) {
+@media screen and (max-width: 576px) {
     .text {
         padding-top: 20px;
     }

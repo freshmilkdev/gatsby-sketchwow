@@ -97,7 +97,7 @@
     }
 }
 
-@media screen and (max-width: 592px) {
+@media screen and (max-width: 576px) {
     .image {
         min-height: 164px;
     }

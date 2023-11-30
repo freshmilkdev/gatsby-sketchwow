@@ -37,7 +37,7 @@
     right: -20px;
 }
 
-@media screen and (min-width: 592px) {
+@media screen and (min-width: 576px) {
     .rightGraphics {
         max-width: 44px;
         top: -40px;

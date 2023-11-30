@@ -3,7 +3,7 @@ import * as styles from './AnimateThingsGrid.module.css'
 import {Container} from "../Layout/Container/Container";
 import {LineHeading} from "../LineHeading/LineHeading";
 import {StaticImage} from "gatsby-plugin-image";
-import {Feature} from "./Feature";
+import {ThingItem} from "./ThingItem";
 
 
 export const AnimateThingsGrid = () => (
@@ -13,13 +13,13 @@ export const AnimateThingsGrid = () => (
                 <p className={`${styles.offset} font-24 font-bold`}>Multi-frame animated GIFs or MP4 videos</p>
             </LineHeading>
             <div className={styles.features}>
-                {(features || []).map((feature, ix) =>
-                    <Feature key={`feature${ix}`} {...feature}/>)}
+                {(things || []).map((thing, ix) =>
+                    <ThingItem key={`thing${ix}`} {...thing}/>)}
             </div>
         </Container>
     </section>
 );
-const features = [
+const things = [
     {
         title: 'Animated Text Videos',
         icon: <StaticImage

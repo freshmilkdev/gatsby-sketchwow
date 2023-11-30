@@ -77,7 +77,7 @@ body {
 
 @media screen and (max-width: 767px) {
     .font-18 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .font-24 {
@@ -89,12 +89,17 @@ body {
     }
 }
 
-@media screen and (max-width: 592px) {
+@media screen and (max-width: 576px) {
+
     .font-36 {
         font-size: 1.6rem;
     }
 }
-
+@media screen and (max-width: 420px) {
+    .font-18 {
+        font-size: 1.1rem;
+    }
+}
 .text-center {
     text-align: center;
 }

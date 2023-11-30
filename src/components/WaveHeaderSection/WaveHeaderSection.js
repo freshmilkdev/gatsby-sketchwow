@@ -43,15 +43,16 @@ export const WaveHeaderSection = ({children, color = 'blue', withPointer = false
     return (
         <section>
             <div className={styles.inner}>
-                {withPointer ? <StaticImage
-                    className={styles.pointer}
-                    style={{position: 'absolute'}}
-                    src="../../images/pointer-left.png"
-                    loading="lazy"
-                    width={76}
-                    quality={98}
-                    alt=""
-                /> : null}
+                {withPointer ?
+                    <StaticImage
+                        className={styles.pointer}
+                        style={{position: 'absolute'}}
+                        src="../../images/pointer-left.png"
+                        loading="lazy"
+                        width={76}
+                        quality={98}
+                        alt=""
+                    /> : null}
                 <GatsbyImage image={image} alt={''} className={styles.wrapper}/>
             </div>
             <div className={styles[color]}>
@@ -61,6 +62,4 @@ export const WaveHeaderSection = ({children, color = 'blue', withPointer = false
             </div>
         </section>
     )
-
-
 }
