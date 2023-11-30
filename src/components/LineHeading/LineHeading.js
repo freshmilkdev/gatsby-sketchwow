@@ -17,16 +17,16 @@ export const fluidImage = graphql`
 export const LineHeading = ({lineColor = 'blue', tag = 'h2', children}) => {
     const data = useStaticQuery(graphql`
         query {
-            blue: file(relativePath: { eq: "wavy-blue-line.png" }) {
+            blue: file(relativePath: { eq: "wavy-lines/wavy-blue-line.png" }) {
                 ...wavyLineImage
             }
-            green: file(relativePath: { eq: "wavy-green-line.png" }) {
+            green: file(relativePath: { eq: "wavy-lines/wavy-green-line.png" }) {
                 ...wavyLineImage
             }
-            yellow: file(relativePath: { eq: "wavy-yellow-line.png" }) {
+            yellow: file(relativePath: { eq: "wavy-lines/wavy-yellow-line.png" }) {
                 ...wavyLineImage
             }
-            purple: file(relativePath: { eq: "wavy-purple-line.png" }) {
+            purple: file(relativePath: { eq: "wavy-lines/wavy-purple-line.png" }) {
                 ...wavyLineImage
             }
         }

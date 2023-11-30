@@ -12,7 +12,7 @@ export const ImageCard = ({heading, content, image}) => (
                 <StaticImage
                     style={{position: "absolute"}}
                     className={styles.lineImage}
-                    src="../../../images/yellow-path-line.png"
+                    src="../../../images/wavy-lines/yellow-path-line.png"
                     loading="lazy"
                     width={268}
                     quality={95}
