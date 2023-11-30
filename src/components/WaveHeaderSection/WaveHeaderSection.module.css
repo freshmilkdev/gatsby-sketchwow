@@ -1,14 +1,30 @@
 .wave {
     max-width: initial !important;
     width: 100%;
+
 }
 
 .wave > div {
     max-width: initial !important;
+
 }
 
 .container {
     padding: 100px 24px 0;
+}
+
+.inner {
+    position: relative;
+}
+
+.wrapper {
+    bottom: -2px;
+}
+
+.pointer {
+    left: 42%;
+    bottom: 20%;
+    z-index: 5;
 }
 
 .blue {
@@ -17,6 +33,7 @@
 }
 
 .green {
+
     background: rgb(237, 248, 231);
     background: linear-gradient(180deg, rgba(237, 248, 231, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }

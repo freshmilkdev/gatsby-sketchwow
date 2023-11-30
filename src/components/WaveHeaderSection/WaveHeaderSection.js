@@ -2,7 +2,7 @@ import React from 'react';
 import * as styles from './WaveHeaderSection.module.css';
 import {Container} from "../Layout/Container/Container";
 import {graphql, useStaticQuery} from "gatsby";
-import {GatsbyImage, getImage} from "gatsby-plugin-image";
+import {GatsbyImage, getImage, StaticImage} from "gatsby-plugin-image";
 
 export const waveImage = graphql`
     fragment waveImage on File {
@@ -15,7 +15,7 @@ export const waveImage = graphql`
         }
     }
 `;
-export const WaveHeaderSection = ({children, color = 'blue'}) => {
+export const WaveHeaderSection = ({children, color = 'blue', withPointer = false}) => {
     const data = useStaticQuery(graphql`
         query {
             blueWave: file(relativePath: { eq: "wave-bg/blue-bg-wave-top.png" }) {
@@ -42,7 +42,18 @@ export const WaveHeaderSection = ({children, color = 'blue'}) => {
     const image = getImage(data[`${color}Wave`])
     return (
         <section>
-            <GatsbyImage image={image} alt={''}/>
+            <div className={styles.inner}>
+                {withPointer ? <StaticImage
+                    className={styles.pointer}
+                    style={{position: 'absolute'}}
+                    src="../../images/pointer-left.png"
+                    loading="lazy"
+                    width={76}
+                    quality={98}
+                    alt=""
+                /> : null}
+                <GatsbyImage image={image} alt={''} className={styles.wrapper}/>
+            </div>
             <div className={styles[color]}>
                 <Container className={styles.container}>
                     {children}
