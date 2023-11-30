@@ -11,12 +11,32 @@
     padding: 100px 24px 0;
 }
 
-.sectionBlue {
+.blue {
     background: rgb(237, 248, 255);
     background: linear-gradient(180deg, rgba(237, 248, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
-.sectionGreen {
-    background: rgb(237,248,231);
-    background: linear-gradient(180deg, rgba(237,248,231,1) 0%, rgba(255,255,255,1) 100%);
+.green {
+    background: rgb(237, 248, 231);
+    background: linear-gradient(180deg, rgba(237, 248, 231, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.grey {
+    background: rgb(243, 238, 252);
+    background: linear-gradient(180deg, rgba(243, 238, 252, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.teal {
+    background: rgb(225, 243, 243);
+    background: linear-gradient(180deg, rgba(225, 243, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.sand {
+    background: rgb(255, 248, 233);
+    background: linear-gradient(180deg, rgba(255, 248, 233, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.pink {
+    background: rgb(254, 243, 239);
+    background: linear-gradient(180deg, rgba(254, 243, 239, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }

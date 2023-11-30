@@ -4,13 +4,8 @@ import {Container} from "../Layout/Container/Container";
 import {graphql, useStaticQuery} from "gatsby";
 import {GatsbyImage, getImage} from "gatsby-plugin-image";
 
-
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-export const fluidImage = graphql`
-    fragment fluidImage on File {
+export const waveImage = graphql`
+    fragment waveImage on File {
         childImageSharp {
             gatsbyImageData(
                 width: 1700
@@ -24,10 +19,22 @@ export const WaveHeaderSection = ({children, color = 'blue'}) => {
     const data = useStaticQuery(graphql`
         query {
             blueWave: file(relativePath: { eq: "blue-bg-wave-top.png" }) {
-                ...fluidImage
+                ...waveImage
             }
             greenWave: file(relativePath: { eq: "green-bg-wave-top.png" }) {
-                ...fluidImage
+                ...waveImage
+            }
+            greyWave: file(relativePath: { eq: "grey-bg-wave-top.png" }) {
+                ...waveImage
+            }
+            tealWave: file(relativePath: { eq: "teal-bg-wave-top.png" }) {
+                ...waveImage
+            }
+            sandWave: file(relativePath: { eq: "sand-bg-wave-top.png" }) {
+                ...waveImage
+            }
+            pinkWave: file(relativePath: { eq: "pink-bg-wave-top.png" }) {
+                ...waveImage
             }
         }
     `)
@@ -36,7 +43,7 @@ export const WaveHeaderSection = ({children, color = 'blue'}) => {
     return (
         <section>
             <GatsbyImage image={image} alt={''}/>
-            <div className={styles[`section${capitalizeFirstLetter(color)}`]}>
+            <div className={styles[color]}>
                 <Container className={styles.container}>
                     {children}
                 </Container>

@@ -7,6 +7,7 @@ import {Steps} from "../components/Steps/Steps";
 import {SayHelloSection} from "../components/SayHelloSection/SayHelloSection";
 import {AnimateAnythingSection} from "../components/AnimateAnythingSection/AnimateAnythingSection";
 import {WatchDesignsSection} from "../components/WatchDesignsSection/WatchDesignsSection";
+import {BestOfAllSection} from "../components/BestOfAllSection/BestOfAllSection";
 
 
 const IndexPage = () => (
@@ -16,6 +17,7 @@ const IndexPage = () => (
         <SayHelloSection/>
         <AnimateAnythingSection/>
         <WatchDesignsSection/>
+        <BestOfAllSection/>
     </Layout>
 )
 
