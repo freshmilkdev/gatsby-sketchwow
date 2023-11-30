@@ -14,7 +14,7 @@ export const fluidImage = graphql`
         }
     }
 `;
-export const LineHeading = ({lineColor = 'blue', children}) => {
+export const LineHeading = ({lineColor = 'blue', tag = 'h2', children}) => {
     const data = useStaticQuery(graphql`
         query {
             blue: file(relativePath: { eq: "wavy-blue-line.png" }) {
@@ -32,10 +32,11 @@ export const LineHeading = ({lineColor = 'blue', children}) => {
         }
     `)
     const image = getImage(data[lineColor]);
+    const Tag = tag;
     return (
-        <h2 className={`${styles.heading} font-55`}>
+        <Tag className={`${styles.heading} font-55`}>
             <GatsbyImage style={{maxWidth: 268, marginBottom: 8}} image={image} alt={''}/>
             {children}
-        </h2>
+        </Tag>
     );
 }
