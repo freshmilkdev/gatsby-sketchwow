@@ -7,18 +7,20 @@
     align-items: center;
     color: var(--color-dark-navy);
 }
+
 .headingImageLine {
-    /*display: inline-block;*/
     max-width: 268px;
     margin-bottom: 8px;
 }
+
 @media screen and (max-width: 767px) {
     .headingImageLine {
         max-width: 200px;
     }
 }
-@media screen and (max-width: 592px) {
+
+@media screen and (max-width: 576px) {
     .headingImageLine {
-       max-width: 180px;
+        max-width: 180px;
     }
 }

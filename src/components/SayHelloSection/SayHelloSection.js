@@ -7,6 +7,7 @@ import {UpgradeOrderBlock} from "../UpgradeOrderBlock/UpgradeOrderBlock";
 
 import {LineHeading} from "../LineHeading/LineHeading";
 import {ImageCardList} from "./ImageCardList";
+import {SectionText} from "../SectionText/SectionText";
 
 export const SayHelloSection = () => (
     <WaveHeaderSection color={'blue'}>
@@ -23,17 +24,17 @@ export const SayHelloSection = () => (
             />
         </LineHeading>
         <h3 className={`${styles.subheading} font-30`}>SketchWow Animate!</h3>
-        <p className={`${styles.text} font-20`}>
+        <SectionText className={`${styles.text} font-20`}>
             <u><strong>For a small one-time payment of just $79</strong></u>, you can add this “SketchWow
             Animate” add-on to your
             SketchWow software to instantly unlock loads of animated presentation, stop-motion & animated
             video-making awesomeness!
-        </p>
-        <p className={`${styles.text} font-20`}>
+        </SectionText>
+        <SectionText className={`${styles.text} font-20`}>
             With your SketchWow Animate add-on, you’ll get access to a TON of creative options to spice up your
             diagrams... visuals... content... presentations... lessons... slideshows and videos to explain just about
             anything – using super-cool-looking sketch animations!
-        </p>
+        </SectionText>
         <UpgradeOrderBlock/>
 
         <div className={styles.bottomWrapper}>

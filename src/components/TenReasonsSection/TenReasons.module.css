@@ -1,0 +1,83 @@
+.reasons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    row-gap: 100px;
+    padding-top: 120px;
+    margin-bottom: 50px;
+}
+
+.card {
+    text-align: center;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #f6f6f6;
+    -webkit-box-shadow: 2px 3px 14px 4px rgba(214, 214, 214, 0.3);
+    -moz-box-shadow: 2px 3px 14px 4px rgba(214, 214, 214, 0.3);
+    box-shadow: 2px 3px 14px 4px rgba(214, 214, 214, 0.3);
+    padding: 70px 20px 10px;
+    position: relative;
+    line-height: 1.4;
+    font-size: 1.125rem;
+}
+
+.reason {
+
+}
+
+.imgWrapper {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .imgWrapper {
+        top: -55px;
+    }
+
+    .imgWrapper > div {
+        max-width: 110px;
+    }
+
+    .card {
+        font-size: 0.9rem;
+        padding: 40px 20px 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .reasons {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 80px;
+    }
+    .card {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    .reasons {
+        padding-top: 80px;
+        margin-bottom: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 50px;
+    }
+    .imgWrapper {
+        top: -35px;
+    }
+    .imgWrapper > div {
+        max-width: 80px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .card {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card {
+        padding: 40px 10px 10px;
+    }
+}
