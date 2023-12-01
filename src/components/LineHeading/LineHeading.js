@@ -35,7 +35,7 @@ export const LineHeading = ({lineColor = 'blue', tag = 'h2', children}) => {
     const Tag = tag;
     return (
         <Tag className={`${styles.heading} font-55`}>
-            <GatsbyImage style={{maxWidth: 268, marginBottom: 8}} image={image} alt={''}/>
+            <GatsbyImage className={styles.headingImageLine} image={image} alt={''}/>
             {children}
         </Tag>
     );

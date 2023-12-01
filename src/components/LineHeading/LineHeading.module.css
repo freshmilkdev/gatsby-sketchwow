@@ -8,11 +8,17 @@
     color: var(--color-dark-navy);
 }
 .headingImageLine {
-    display: inline-block;
+    /*display: inline-block;*/
     max-width: 268px;
+    margin-bottom: 8px;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
     .headingImageLine {
-        /*display: none;*/
+        max-width: 200px;
+    }
+}
+@media screen and (max-width: 592px) {
+    .headingImageLine {
+       max-width: 180px;
     }
 }
