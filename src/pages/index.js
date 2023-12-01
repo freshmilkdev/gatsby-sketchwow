@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../components/Layout/layout"
-import Seo from "../components/seo"
+import Seo from "../components/Layout/seo"
 import '../styles/global.css';
 import {Hero} from "../components/Hero/Hero";
 import {Steps} from "../components/Steps/Steps";
@@ -10,6 +10,7 @@ import {WatchDesignsSection} from "../components/WatchDesignsSection/WatchDesign
 import {BestOfAllSection} from "../components/BestOfAllSection/BestOfAllSection";
 import {AnimateThingsGrid} from "../components/AnimateThingsGrid/AnimateThingsGrid";
 import {FeaturesSection} from "../components/FeaturesSection/FeaturesSection";
+import {SoEasySection} from "../components/SoEasySection/SoEasySection";
 
 
 const IndexPage = () => (
@@ -22,6 +23,7 @@ const IndexPage = () => (
         <BestOfAllSection/>
         <AnimateThingsGrid/>
         <FeaturesSection/>
+        <SoEasySection/>
     </Layout>
 )
 

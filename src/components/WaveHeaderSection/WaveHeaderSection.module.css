@@ -27,6 +27,20 @@
     z-index: 5;
 }
 
+@media screen and (max-width: 992px) {
+    .pointer {
+        max-width: 74px;
+        bottom: -20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pointer {
+        max-width: 54px;
+
+    }
+}
+
 .blue {
     background: rgb(237, 248, 255);
     background: linear-gradient(180deg, rgba(237, 248, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
