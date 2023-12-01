@@ -13,6 +13,7 @@ import {FeaturesSection} from "../components/FeaturesSection/FeaturesSection";
 import {SoEasySection} from "../components/SoEasySection/SoEasySection";
 import {TenReasonsSection} from "../components/TenReasonsSection/TenReasonsSection";
 import {BonusesSection} from "../components/BonusesSection/BonusesSection";
+import {TestDriveSection} from "../components/TestDriveSection/TestDriveSection";
 
 
 const IndexPage = () => (
@@ -28,6 +29,7 @@ const IndexPage = () => (
         <SoEasySection/>
         <TenReasonsSection/>
         <BonusesSection/>
+        <TestDriveSection/>
     </Layout>
 )
 
