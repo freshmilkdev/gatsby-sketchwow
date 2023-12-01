@@ -7,7 +7,7 @@ export const ImageCard = ({heading, content, image}) => (
         <div  className={styles.image}>{image}</div>
         <div className={`${styles.textWrapper} font-medium`}>
 
-            <h2 className={`${styles.heading} font-36`}>
+            <h2 className={`${styles.heading} font-35`}>
                 {heading}
                 <StaticImage
                     style={{position: "absolute"}}

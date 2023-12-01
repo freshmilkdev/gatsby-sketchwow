@@ -1,5 +1,6 @@
 :root {
     --color-blue: #004dff;
+    --color-light-blue: #1988cc;
     --color-yellow: #ffd858;
     --color-dark-navy: #192a4a;
     --color-dark-grey: #333333;
@@ -53,8 +54,12 @@ body {
     font-size: 1.875rem;
 }
 
-.font-36 {
-    font-size: 2.25rem;
+.font-35 {
+    font-size: 2.188rem;
+}
+
+.font-45 {
+    font-size: 2.813rem;
 }
 
 .font-55 {
@@ -66,8 +71,12 @@ body {
         font-size: 1.5rem;
     }
 
-    .font-36 {
+    .font-35 {
         font-size: 2rem;
+    }
+
+    .font-45 {
+        font-size: 2.5rem;
     }
 
     .font-55 {
@@ -84,6 +93,10 @@ body {
         font-size: 1.3rem;
     }
 
+    .font-45 {
+        font-size: 2rem;
+    }
+
     .font-55 {
         font-size: 2.1rem;
     }
@@ -93,15 +106,18 @@ body {
     .font-20 {
         font-size: 1.1rem;
     }
-    .font-36 {
+
+    .font-35 {
         font-size: 1.6rem;
     }
 }
+
 @media screen and (max-width: 420px) {
     .font-18 {
         font-size: 1.1rem;
     }
 }
+
 .text-center {
     text-align: center;
 }
@@ -117,9 +133,11 @@ body {
 .font-bold {
     font-weight: 700;
 }
+
 .font-extrabold {
     font-weight: 800;
 }
+
 .font-black {
     font-weight: 900;
 }

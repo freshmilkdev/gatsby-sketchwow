@@ -12,6 +12,7 @@ import {AnimateThingsGrid} from "../components/AnimateThingsGrid/AnimateThingsGr
 import {FeaturesSection} from "../components/FeaturesSection/FeaturesSection";
 import {SoEasySection} from "../components/SoEasySection/SoEasySection";
 import {TenReasonsSection} from "../components/TenReasonsSection/TenReasonsSection";
+import {BonusesSection} from "../components/BonusesSection/BonusesSection";
 
 
 const IndexPage = () => (
@@ -26,6 +27,7 @@ const IndexPage = () => (
         <FeaturesSection/>
         <SoEasySection/>
         <TenReasonsSection/>
+        <BonusesSection/>
     </Layout>
 )
 
