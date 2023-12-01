@@ -6,12 +6,12 @@
     line-height: 1.5;
 }
 
-.textGap p {
+.textGap p, .textGap li {
     margin-bottom: 28px;
 }
 
 @media screen and (max-width: 767px) {
-    .textGap p {
+    .textGap p, .textGap li {
         margin-bottom: 14px;
     }
 }

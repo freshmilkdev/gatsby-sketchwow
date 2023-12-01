@@ -5,9 +5,16 @@
 
 @media screen and (min-width: 767px) {
     .row {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .row:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .row > div {
+        width: 50%;
     }
 }
 
@@ -21,7 +28,6 @@
 }
 
 .price {
-    color: var(--color-light-blue);
     display: flex;
     align-items: center;
     font-size: 2.813rem;
@@ -29,8 +35,26 @@
     padding: 20px 0;
 }
 
+.priceValue {
+    color: var(--color-light-blue);
+    /*padding-top: 10px;*/
+}
+
 @media screen and (max-width: 767px) {
     .price {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+    .priceImage {
+        max-width: 180px;
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .price {
+        font-size: 1.5rem;
+    }
+
+    .priceImage {
+        max-width: 120px;
     }
 }
