@@ -7,10 +7,7 @@ import {SectionText} from "../SectionText/SectionText";
 
 export const UpgradeOrderBlock = () => (
     <>
-        <UpgradeOrderButton link={'/'}/>
-        <h4 className={`${styles.promo} ${styles.fee} font-22`}>
-            I want to add SketchWow Animate for a one-time fee of just $79.
-        </h4>
+        <UpgradeOrderButton link={'/'} afterText={'I want to add SketchWow Animate for a one-time fee of just $79'}/>
         <DashedText>
             No thanks. I’ll pass on this SketchWow Animate add-on which includes loads of features to
             animate +

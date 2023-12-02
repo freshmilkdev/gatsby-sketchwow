@@ -14,6 +14,7 @@ import {SoEasySection} from "../components/SoEasySection/SoEasySection";
 import {TenReasonsSection} from "../components/TenReasonsSection/TenReasonsSection";
 import {BonusesSection} from "../components/BonusesSection/BonusesSection";
 import {TestDriveSection} from "../components/TestDriveSection/TestDriveSection";
+import {NoFeeSection} from "../components/NoFeeSection/NoFeeSection";
 
 
 const IndexPage = () => (
@@ -30,6 +31,7 @@ const IndexPage = () => (
         <TenReasonsSection/>
         <BonusesSection/>
         <TestDriveSection/>
+        <NoFeeSection/>
     </Layout>
 )
 

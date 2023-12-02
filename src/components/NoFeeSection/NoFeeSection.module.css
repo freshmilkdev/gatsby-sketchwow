@@ -1,0 +1,41 @@
+
+.price {
+    color: var(--color-dark-navy);
+}
+
+.price span {
+    color: var(--color-yellow);
+}
+
+
+.image {
+    max-width: 200px;
+    margin: 20px 0;
+}
+
+.heading {
+    color: var(--color-dark-navy);
+    text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+    .image {
+        max-width: initial;
+        margin: 0;
+    }
+
+    .text {
+        max-width: 540px;
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    .row {
+        margin: 80px 0 50px;
+        display: flex;
+    }
+
+    .row > * {
+        width: 50%;
+    }
+}

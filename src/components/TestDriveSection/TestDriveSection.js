@@ -60,9 +60,8 @@ export const TestDriveSection = () => (
                 <p>Just click that button below… and the “Animate” add-on will be added to your SketchWow software.</p>
             </SectionText>
         </div>
-        <UpgradeOrderButton link={'/'}/>
+        <UpgradeOrderButton link={'/'} afterText={<i>Ok... still considering if you should buy this thing?</i>}/>
         <SectionText textGap>
-            <p><strong><i>Ok... still considering if you should buy this thing?</i></strong></p>
             <p>Here are a couple more reasons why <u>this is an amazing must-have deal!</u></p>
         </SectionText>
         <div className={styles.speakerWrapper}>
