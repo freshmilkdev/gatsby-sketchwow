@@ -1,5 +1,4 @@
 import React from 'react';
-import * as styles from "./UpgradeOrderBlock.module.css";
 import {UpgradeOrderButton} from "./UpgradeOrderButton/UpgradeOrderButton";
 import {DashedText} from "./DashedText/DashedText";
 import {SectionText} from "../SectionText/SectionText";
