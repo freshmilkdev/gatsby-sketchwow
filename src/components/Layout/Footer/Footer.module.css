@@ -12,6 +12,7 @@
 }
 
 .navigation {
+    text-align: center;
     padding: 60px 0 30px;
     border-bottom: 1px solid var(--color-border-grey);
 }
@@ -22,6 +23,8 @@
 
 @media screen and (min-width: 992px) {
     .copyright {
+        display: flex;
+        align-items: center;
         padding: 0;
     }
 
@@ -46,9 +49,13 @@
 
 
 @media screen and (min-width: 576px) {
+    .navigation {
+        text-align: left;
+    }
 
     .navigation li {
         padding: 0;
+        line-height: 1.5;
     }
 
     .navigation ul {
