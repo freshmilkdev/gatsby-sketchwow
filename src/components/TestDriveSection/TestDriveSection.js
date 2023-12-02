@@ -65,5 +65,15 @@ export const TestDriveSection = () => (
             <p><strong><i>Ok... still considering if you should buy this thing?</i></strong></p>
             <p>Here are a couple more reasons why <u>this is an amazing must-have deal!</u></p>
         </SectionText>
+        <div className={styles.speakerWrapper}>
+            <StaticImage
+                className={styles.speakerImage}
+                src="../../images/speaker-icon.png"
+                loading="lazy"
+                width={124}
+                quality={95}
+                alt=""
+            />
+        </div>
     </WaveHeaderSection>
 );

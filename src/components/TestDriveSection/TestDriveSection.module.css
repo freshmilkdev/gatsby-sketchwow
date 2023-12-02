@@ -12,9 +12,8 @@
 
 @media screen and (min-width: 767px) {
 
-
     .row {
-        margin: 80px 0;
+        margin: 80px 0 40px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         /*grid-gap: 40px;*/
@@ -29,5 +28,25 @@
 
     .image {
         left: -110px;
+    }
+}
+
+.speakerWrapper {
+    position: relative;
+    padding-bottom: 80px;
+}
+.speakerImage {
+    position: absolute !important;
+    right: 0;
+    bottom: 0;
+}
+@media screen and (max-width: 992px) {
+    .speakerImage {
+       max-width: 80px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .speakerImage {
+        max-width: 60px;
     }
 }
