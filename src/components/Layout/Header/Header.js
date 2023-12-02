@@ -13,7 +13,7 @@ const Header = ({siteTitle}) => (
             <header className={styles.header}>
                 <Link to="/" className={styles.logoLink}>
                     <StaticImage
-                        src="../../../images/logo.png"
+                        src="../../../images/logo-header.png"
                         loading="eager"
                         width={277}
                         quality={100}

@@ -48,7 +48,6 @@ export const NoFeeSection = () => (
         </SectionText>
         <div style={{textAlign: 'center'}}>
             <StaticImage
-                // className={styles.image}
                 src="../../images/product-devices.png"
                 loading="lazy"
                 width={1178}

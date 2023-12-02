@@ -36,6 +36,9 @@ export const WaveHeaderSection = ({children, color = 'blue', withPointer = false
             pinkWave: file(relativePath: { eq: "wave-bg/pink-bg-wave-top.png" }) {
                 ...waveImage
             }
+            navyWave: file(relativePath: { eq: "wave-bg/navy-bg-wave-top.png" }) {
+                ...waveImage
+            }
         }
     `)
 

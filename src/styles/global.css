@@ -10,7 +10,6 @@
 body {
     font-family: "Inter", sans-serif;
     color: var(--color-dark-grey);
-    padding-bottom: 60px;
     /*font-size: calc(0.75em + 1vmin);*/
 }
 

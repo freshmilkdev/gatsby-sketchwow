@@ -71,3 +71,7 @@
     background: rgb(254, 243, 239);
     background: linear-gradient(180deg, rgba(254, 243, 239, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
+
+.navy {
+    background: var(--color-dark-navy);
+}
