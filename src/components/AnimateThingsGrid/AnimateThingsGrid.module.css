@@ -1,6 +1,5 @@
 .offset {
     padding-top: 140px;
-    /*display: block;*/
 }
 
 .section {
@@ -11,7 +10,7 @@
     padding: 50px 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
+    grid-gap: 40px;
 }
 
 .featureWrapper {
@@ -28,7 +27,7 @@
 }
 
 .feature {
-    max-width: 136px;
+    max-width: 140px;
     font-size: 1.25rem;
 }
 

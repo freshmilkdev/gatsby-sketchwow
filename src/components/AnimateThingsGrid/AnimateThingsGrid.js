@@ -5,7 +5,6 @@ import {LineHeading} from "../LineHeading/LineHeading";
 import {StaticImage} from "gatsby-plugin-image";
 import {ThingItem} from "./ThingItem";
 
-
 export const AnimateThingsGrid = () => (
     <section className={styles.section}>
         <Container>
