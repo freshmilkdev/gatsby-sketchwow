@@ -2,8 +2,13 @@
     text-align: center;
 }
 
+.image {
+    max-width: 200px;
+}
+
 .footer {
     color: #fff;
+    font-weight: 300;
 }
 
 .navigation {
@@ -41,6 +46,7 @@
 
 
 @media screen and (min-width: 576px) {
+
     .navigation li {
         padding: 0;
     }
@@ -53,6 +59,10 @@
 }
 
 @media screen and (min-width: 767px) {
+    .image {
+        max-width: initial;
+    }
+
     .navigation li {
         font-size: 1rem;
     }
@@ -76,5 +86,6 @@
 
 .disclaimer {
     padding: 20px 0;
+    line-height: 1.5;
     text-align: center;
 }

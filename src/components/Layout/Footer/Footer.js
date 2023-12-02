@@ -16,13 +16,16 @@ export const Footer = () => (
     <WaveHeaderSection color={'navy'}>
         <footer className={styles.footer}>
             <div className={styles.logo}>
-                <StaticImage
-                    src="../../../images/logo-white.png"
-                    loading="lazy"
-                    width={313}
-                    quality={100}
-                    alt="SketchWOW"
-                />
+                <Link to={'/'}>
+                    <StaticImage
+                        className={styles.image}
+                        src="../../../images/logo-white.png"
+                        loading="lazy"
+                        width={313}
+                        quality={100}
+                        alt="SketchWOW"
+                    />
+                </Link>
             </div>
             <nav className={styles.navigation}>
                 <ul>
