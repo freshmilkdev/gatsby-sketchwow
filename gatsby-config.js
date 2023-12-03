@@ -47,16 +47,19 @@ module.exports = {
                 icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
             },
         },
-        {
-            resolve: `gatsby-plugin-google-fonts-v2`,
-            options: {
-                fonts: [
-                    {
-                        family: 'Inter',
-                        weights: ['300', '400', '500', '600', '700', '800', '900']
-                    },
-                ]
-            }
-        }
+        // {
+        //     resolve: `gatsby-omni-font-loader`,
+        //     options: {
+        //         mode: "async",
+        //         enableListener: true,
+        //         preconnect: [`https://fonts.gstatic.com`],
+        //         web: [
+        //             {
+        //                 name: `Inter`,
+        //                 file: `https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap`,
+        //             },
+        //         ],
+        //     },
+        // },
     ],
 }

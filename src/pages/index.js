@@ -40,6 +40,19 @@ const IndexPage = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home"/>
+export const Head = () => (
+    <>
+        <Seo title="Home"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+        <link rel="preload" as="style"
+              href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"/>
+        <link rel="stylesheet" media="print" onLoad="this.onload=null;this.removeAttribute('media');"
+              href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"/>
+        <noscript>
+            <link rel="stylesheet"
+                  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"/>
+        </noscript>
+    </>
+)
 
 export default IndexPage
