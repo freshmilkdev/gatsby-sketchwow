@@ -67,7 +67,7 @@
 
 .arrow {
     position: absolute !important;
-    bottom: -10%;
+    bottom: -14%;
     left: -20px;
     z-index: 2;
 }
@@ -75,5 +75,6 @@
 @media screen and (max-width: 767px) {
     .arrow {
         max-width: 90px;
+        bottom: -6%;
     }
 }
