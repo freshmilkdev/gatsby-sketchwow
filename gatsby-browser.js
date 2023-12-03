@@ -3,6 +3,9 @@
  *
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/
  */
+
+//another way to load the same fonts, currently handled with gatsby-srr
+
 // window.addEventListener("load", function(){
 //     const preConnectAPI = document.createElement('link');
 //     preConnectAPI.setAttribute('rel', 'preconnect');
@@ -18,7 +21,8 @@
 //     font.setAttribute('href', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 //     document.head.appendChild(font);
 // });
-// You can delete this file if you're not using it
+
+// Possible way to load fonts, but this will increase bundle size
 // import "@fontsource/inter/300.css";
 // import "@fontsource/inter/400.css";
 // import "@fontsource/inter/500.css";
