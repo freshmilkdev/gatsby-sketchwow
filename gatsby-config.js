@@ -48,15 +48,17 @@ module.exports = {
             },
         },
         {
-            resolve: `gatsby-plugin-google-fonts-v2`,
+            resolve: `gatsby-omni-font-loader`,
             options: {
-                fonts: [
+                enableListener: true,
+                preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+                web: [
                     {
-                        family: 'Inter',
-                        weights: ['300', '400', '500', '600', '700', '800', '900']
-                    }
-                ]
-            }
-        }
+                        name: `Open Sans`,
+                        file: `https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap`,
+                    },
+                ],
+            },
+        },
     ],
 }
