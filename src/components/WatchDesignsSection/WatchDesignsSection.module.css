@@ -2,8 +2,28 @@
     padding-top: 60px;
 }
 
+
+
 .row > div {
     margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row video {
+
+    border-radius: 20px;
+
+}
+
+.image {
+    max-width: 100px;
+    align-self: center;
+    position: relative;
+    top: -20px;
+
 }
 
 .jingle {
@@ -11,7 +31,60 @@
     padding-top: 40px;
 }
 
+.pointerLeft {
+    position: absolute;
+    top: -40px;
+    left: 80px;
+    max-width: 40px;
+}
+
+.pointerRight {
+    position: absolute;
+    bottom: 30%;
+    right: -10px;
+    max-width: 40px;
+}
+
+@media screen and (min-width: 1300px) {
+    .row {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+
+    .row video {
+        object-fit: cover;
+        max-height: 254px;
+        border-radius: 40px;
+    }
+
+    .row > * {
+        width: 48%;
+        margin-bottom: 70px;
+    }
+}
+
 @media screen and (min-width: 767px) {
+    .row {
+        padding: 50px 50px 0;
+    }
+    .pointerLeft {
+        top: -70px;
+        left: 120px;
+        max-width: initial;
+    }
+
+    .pointerRight {
+        max-width: initial;
+        right: -40px;
+    }
+
+
+    .image {
+        max-width: 100%;
+        top: -40px;
+    }
+
     .section {
         padding-top: 100px;
     }
@@ -21,17 +94,5 @@
         padding-top: 80px;
     }
 
-    .row {
-        display: flex;
-        align-items: flex-end;
 
-    }
-
-    .row > div {
-        margin-bottom: 70px;
-    }
-
-    .left {
-        margin-right: 50px;
-    }
 }
