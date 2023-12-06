@@ -1,8 +1,9 @@
 .section {
     padding-top: 60px;
 }
-
-
+.row {
+    padding: 50px 0 0;
+}
 
 .row > div {
     margin-bottom: 40px;
@@ -13,9 +14,10 @@
 }
 
 .row video {
-
+    max-width: 640px;
+    align-self: center;
     border-radius: 20px;
-
+    border: 1px solid var(--color-border-grey);
 }
 
 .image {
@@ -26,15 +28,46 @@
 
 }
 
-.jingle {
+.jiggle {
     text-align: center;
     padding-top: 40px;
+}
+
+.inner {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 42px;
+
+}
+
+.jiggle video {
+    border-radius: 20px;
+    max-width: 900px;
+    border: 1px solid var(--color-border-grey);
+    -webkit-box-shadow: 10px 10px 19px -3px rgba(171, 168, 171, 0.31);
+    -moz-box-shadow: 10px 10px 19px -3px rgba(171, 168, 171, 0.31);
+    box-shadow: 10px 10px 19px -3px rgba(171, 168, 171, 0.31);
+}
+
+.btnJiggle {
+    position: absolute;
+    right: 10%;
+    top: -30px;
+    max-width: 170px;
 }
 
 .pointerLeft {
     position: absolute;
     top: -40px;
     left: 80px;
+    max-width: 40px;
+}
+.pointerJiggle {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
     max-width: 40px;
 }
 
@@ -54,8 +87,13 @@
 
     .row video {
         object-fit: cover;
-        max-height: 254px;
+        /*max-height: 254px;*/
         border-radius: 40px;
+    }
+
+    .jiggle video {
+        border-radius: 20px;
+
     }
 
     .row > * {
@@ -67,6 +105,16 @@
 @media screen and (min-width: 767px) {
     .row {
         padding: 50px 50px 0;
+    }
+
+    .btnJiggle {
+        max-width: initial;
+        top: -40px;
+    }
+    .pointerJiggle {
+        bottom: 10px;
+        right: 50px;
+        max-width: initial;
     }
     .pointerLeft {
         top: -70px;
@@ -89,7 +137,7 @@
         padding-top: 100px;
     }
 
-    .jingle {
+    .jiggle {
         text-align: center;
         padding-top: 80px;
     }
