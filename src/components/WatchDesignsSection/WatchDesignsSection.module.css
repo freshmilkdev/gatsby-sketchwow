@@ -1,6 +1,7 @@
 .section {
     padding-top: 60px;
 }
+
 .row {
     padding: 50px 0 0;
 }
@@ -52,27 +53,28 @@
 }
 
 .btnJiggle {
-    position: absolute;
+    position: absolute !important;
     right: 10%;
     top: -30px;
     max-width: 170px;
 }
 
 .pointerLeft {
-    position: absolute;
+    position: absolute !important;
     top: -40px;
     left: 80px;
     max-width: 40px;
 }
+
 .pointerJiggle {
-    position: absolute;
+    position: absolute !important;
     bottom: 20px;
     right: 40px;
     max-width: 40px;
 }
 
 .pointerRight {
-    position: absolute;
+    position: absolute !important;
     bottom: 30%;
     right: -10px;
     max-width: 40px;
@@ -111,11 +113,13 @@
         max-width: initial;
         top: -40px;
     }
+
     .pointerJiggle {
         bottom: 10px;
         right: 50px;
         max-width: initial;
     }
+
     .pointerLeft {
         top: -70px;
         left: 120px;
