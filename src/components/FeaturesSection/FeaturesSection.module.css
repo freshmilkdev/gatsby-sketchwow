@@ -4,6 +4,20 @@
     padding: 40px 0;
 }
 
+.header {
+    font-size: 3.438rem;
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        font-size: 2rem;
+    }
+
+    .br {
+        display: none;
+    }
+}
+
 .featuresCol {
     max-width: 33%;
     width: 100%;

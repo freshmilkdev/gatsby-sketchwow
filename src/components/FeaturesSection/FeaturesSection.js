@@ -7,7 +7,7 @@ import {Feature} from "./Feature";
 export const FeaturesSection = () => (
     <WaveHeaderSection color={'teal'} withPointer>
         <LineHeading lineColor='blue'>
-            <span>Creating  <br className='mobile-only'/> Ahh-mazing Animations <br/>Has Never <br className='mobile-only'/> Been Easier!</span>
+            <span className={`font-55 ${styles.header}`}>Creating Ahh-mazing <br className='mobile-only'/> Animations <br className={styles.br}/> Has Never <br className='mobile-only'/> Been Easier!</span>
         </LineHeading>
         <div className={styles.features}>
             <div className={styles.featuresCol}>
