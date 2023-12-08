@@ -10,7 +10,7 @@ import {UpgradeOrderButton} from "../UpgradeOrderBlock/UpgradeOrderButton/Upgrad
 export const TestDriveSection = () => (
     <WaveHeaderSection color={'pink'} withPointer>
         <LineHeading lineColor='red'>
-            <span>Start Creating Not-So-Perfect <br/><u>Animations That Stand Out!</u></span>
+            <span>Start Creating <br className={styles.br}/>Not-So-Perfect <br/><u>Animations That Stand Out!</u></span>
         </LineHeading>
         <SectionText textGap className={styles.text}>
             <p>It’s no secret...</p>
