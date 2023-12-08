@@ -140,3 +140,9 @@ body {
 .font-black {
     font-weight: 900;
 }
+
+@media screen and (min-width: 576px) {
+    .mobile-only {
+        display: none;
+    }
+}

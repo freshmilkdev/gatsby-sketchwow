@@ -9,7 +9,7 @@ export const TenReasonsSection = () => (
     <section>
         <Container>
             <LineHeading lineColor='yellow'>
-                <span>10 Reasons Why You Need <br/>SketchWow Animate In Your Life...</span>
+                <span>10 Reasons  <br className='mobile-only'/> Why You Need <br/>SketchWow Animate  <br className='mobile-only'/> In Your Life...</span>
             </LineHeading>
             <div className={styles.reasons}>
                 {reasons.map((reason, ix) =>
