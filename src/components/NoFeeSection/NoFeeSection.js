@@ -50,7 +50,7 @@ export const NoFeeSection = () => (
         <div style={{textAlign: 'center'}}>
             <div className={styles.videoContainer}>
                 <div className={styles.videoWrapper}>
-                    <video width="100%" loop autoPlay muted>
+                    <video width="100%" loop autoPlay muted playsInline>
                         <source src={ScreenshotVideo} type="video/mp4"/>
                     </video>
                 </div>

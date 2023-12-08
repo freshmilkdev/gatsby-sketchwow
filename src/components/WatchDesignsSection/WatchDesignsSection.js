@@ -20,7 +20,7 @@ export const WatchDesignsSection = () => (
                 "magnetic" effects that are exclusive to SketchWow animate, including...</SectionText>
             <div className={styles.row}>
                 <div>
-                    <video width="100%" loop autoPlay muted>
+                    <video width="100%" loop autoPlay muted playsInline>
                         <source src={DrawVideo} type="video/mp4"/>
                     </video>
                     <StaticImage
@@ -41,7 +41,7 @@ export const WatchDesignsSection = () => (
                     />
                 </div>
                 <div>
-                    <video width="100%" loop autoPlay muted>
+                    <video width="100%" loop autoPlay muted playsInline>
                         <source src={ShakeVideo} type="video/mp4"/>
                     </video>
                     <StaticImage
@@ -70,7 +70,7 @@ export const WatchDesignsSection = () => (
             </SectionText>
             <div className={styles.jiggle}>
                 <div className={styles.inner}>
-                    <video width="100%" loop autoPlay muted>
+                    <video width="100%" loop autoPlay muted playsInline>
                         <source src={TextVideo} type="video/mp4"/>
                     </video>
                     <StaticImage
