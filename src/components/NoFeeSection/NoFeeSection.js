@@ -6,6 +6,7 @@ import {StaticImage} from "gatsby-plugin-image";
 import {SectionText} from "../SectionText/SectionText";
 import {UpgradeOrderButton} from "../UpgradeOrderBlock/UpgradeOrderButton/UpgradeOrderButton";
 import {DashedText} from "../UpgradeOrderBlock/DashedText/DashedText";
+import ScreenshotVideo from "../../videos/screenshot-resized.mp4"
 
 export const NoFeeSection = () => (
     <WaveHeaderSection color={'sand'} withPointer>
@@ -47,13 +48,20 @@ export const NoFeeSection = () => (
                 amazed at what you can do using SketchWow + SketchWow Animate.</p>
         </SectionText>
         <div style={{textAlign: 'center'}}>
-            <StaticImage
-                src="../../images/product-devices.png"
-                loading="lazy"
-                width={1178}
-                quality={99}
-                alt=""
-            />
+            <div className={styles.videoContainer}>
+                <div className={styles.videoWrapper}>
+                    <video width="100%" loop autoPlay muted>
+                        <source src={ScreenshotVideo} type="video/mp4"/>
+                    </video>
+                </div>
+                <StaticImage
+                    src="../../images/product-devices-transparent-screen.png"
+                    loading="lazy"
+                    width={1178}
+                    quality={99}
+                    alt=""
+                />
+            </div>
         </div>
         <UpgradeOrderButton link={'/'} afterText={'I want to add SketchWow Animate for a one-time fee of just $79.'}/>
         <DashedText>
