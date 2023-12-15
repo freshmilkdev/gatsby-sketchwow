@@ -4,7 +4,7 @@ import {Container} from "../Layout/Container/Container";
 import * as styles from './Steps.module.css';
 import {StaticImage} from "gatsby-plugin-image";
 import {SectionText} from "../SectionText/SectionText";
-
+import StepsSVG from "../../assets/svg/steps-only.inline.svg";
 const steps = [
     {
         title: 'Export',
@@ -27,15 +27,7 @@ export const Steps = () => (
     <section>
         <Container>
             <div className={styles.wrapper}>
-                <StaticImage
-                    style={{position: "absolute"}}
-                    className={styles.image}
-                    src="../../images/steps-only.png"
-                    loading="lazy"
-                    width={508}
-                    quality={95}
-                    alt=""
-                />
+                <StepsSVG style={{position: "absolute"}} className={styles.image}/>
                 <ul className={styles.steps}>
                     {steps.map((step, ix) =>
                         <StepRow {...step} key={`step${ix}`} index={ix + 1}/>)}
@@ -53,7 +45,6 @@ export const Steps = () => (
                     <p>I know you’ll be excited to hear about our new SketchWow add-on.</p>
                 </SectionText>
             </div>
-
         </Container>
     </section>
 );

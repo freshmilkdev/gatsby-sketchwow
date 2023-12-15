@@ -1,18 +1,7 @@
 import React from 'react';
 
-import {StaticImage} from "gatsby-plugin-image";
+import SVG from "../../../assets/svg/hero-bg.inline.svg";
+
 import * as styles from './Header.module.css';
 
-export const HeaderBG = () => (
-    <div>
-        <StaticImage
-            style={{position: "absolute"}}
-            className={styles.headerBG}
-            src="../../../images/hero-bg.png"
-            loading="lazy"
-            width={1700}
-            quality={95}
-            alt=""
-        />
-    </div>
-);
+export const HeaderBG = () => <SVG className={styles.headerBG}/>

@@ -21,10 +21,11 @@
 
 .inner {
     position: relative;
+    top: 8px;
 }
 
 .wrapper {
-    bottom: -2px;
+    width: 100%;
 }
 
 .pointer {

@@ -1,21 +1,12 @@
 import React from 'react';
 import * as styles from './Hero.module.css';
-import {StaticImage} from "gatsby-plugin-image";
+import SVG from "../../assets/svg/special-offer-bg.inline.svg";
 
 export const HeroHeading = ({text}) => (
     <div className={styles.headingWrapper}>
         <h2 className={styles.heading}>
             {text}
-            <StaticImage
-                style={{position: "absolute"}}
-                className={styles.image}
-                src="../../images/special-offer-bg.png"
-                loading="lazy"
-                width={573}
-                quality={95}
-                alt=""
-            />
+            <SVG className={styles.image}/>
         </h2>
-
     </div>
 );

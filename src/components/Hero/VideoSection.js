@@ -2,66 +2,28 @@ import React from 'react';
 import {StaticImage} from "gatsby-plugin-image";
 import * as styles from './Hero.module.css';
 
+import YellowLineSVG from "../../assets/svg/hero-video-yellow-line.inline.svg";
+import BlueLineSVG from "../../assets/svg/hero-video-blue-line.inline.svg";
+import LeftElementsSVG from "../../assets/svg/hero-video-left-elements.inline.svg";
+import RightElementsSVG from "../../assets/svg/hero-video-right-elements.inline.svg";
+import VideoSVG from "../../assets/svg/video-banner.inline.svg";
+import ArrowSVG from "../../assets/svg/hero-video-arrow.inline.svg";
 
 export const VideoSection = () => (
     <div className={styles.videoSection}>
-        <StaticImage
-            style={{position: "absolute"}}
-            className={styles.videoImagesTop}
-            src="../../images/hero-video-yellow-line.png"
-            loading="lazy"
-            width={96}
-            quality={95}
-            alt=""
-        />
+        <YellowLineSVG className={styles.videoImagesTop}/>
         <div className={styles.videoRow}>
             <div>
-                <StaticImage
-                    className={styles.videoImagesLeft}
-                    src="../../images/hero-video-left-elements.png"
-                    loading="lazy"
-                    width={68}
-                    quality={95}
-                    alt=""
-                />
+                <LeftElementsSVG className={styles.videoImagesLeft}/>
             </div>
             <div className={styles.videoWrapper}>
-                <StaticImage
-                    src="../../images/banner_video2.jpg"
-                    loading="lazy"
-                    width={840}
-                    quality={75}
-                    alt=""
-                />
+                <VideoSVG/>
             </div>
             <div>
-                <StaticImage
-                    className={styles.videoImagesRight}
-                    src="../../images/hero-video-right-elements.png"
-                    loading="lazy"
-                    width={77}
-                    quality={95}
-                    alt=""
-                />
+                <RightElementsSVG className={styles.videoImagesRight}/>
             </div>
         </div>
-        <StaticImage
-            style={{position: "absolute"}}
-            className={styles.videoImagesBottom}
-            src="../../images/hero-video-blue-line.png"
-            loading="lazy"
-            width={96}
-            quality={95}
-            alt=""
-        />
-        <StaticImage
-            style={{position: "absolute"}}
-            className={styles.videoImagesArrow}
-            src="../../images/hero-video-arrow.png"
-            loading="lazy"
-            width={106}
-            quality={95}
-            alt=""
-        />
+        <BlueLineSVG className={styles.videoImagesBottom}/>
+        <ArrowSVG style={{position: "absolute"}} className={styles.videoImagesArrow}/>
     </div>
 );

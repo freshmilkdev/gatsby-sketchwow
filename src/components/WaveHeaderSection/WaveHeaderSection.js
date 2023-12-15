@@ -1,48 +1,28 @@
 import React from 'react';
 import * as styles from './WaveHeaderSection.module.css';
 import {Container} from "../Layout/Container/Container";
-import {graphql, useStaticQuery} from "gatsby";
-import {GatsbyImage, getImage, StaticImage} from "gatsby-plugin-image";
 
-export const waveImage = graphql`
-    fragment waveImage on File {
-        childImageSharp {
-            gatsbyImageData(
-                width: 1700
-                layout: FULL_WIDTH
-                placeholder: BLURRED
-            )
-        }
-    }
-`;
+import {StaticImage} from "gatsby-plugin-image";
+import BlueWaveSVG from "../../assets/svg/wave-bg/blue-bg-wave-top.inline.svg";
+import GreenWaveSVG from "../../assets/svg/wave-bg/green-bg-wave-top.inline.svg";
+import GreyWaveSVG from "../../assets/svg/wave-bg/grey-bg-wave-top.inline.svg";
+import NavyWaveSVG from "../../assets/svg/wave-bg/navy-bg-wave-top.inline.svg";
+import PinkWaveSVG from "../../assets/svg/wave-bg/pink-bg-wave-top.inline.svg";
+import SandWaveSVG from "../../assets/svg/wave-bg/sand-bg-wave-top.inline.svg";
+import TealWaveSVG from "../../assets/svg/wave-bg/teal-bg-wave-top.inline.svg";
+
+const SVGList = {
+    'blue': <BlueWaveSVG className={styles.wrapper}/>,
+    'green': <GreenWaveSVG className={styles.wrapper}/>,
+    'grey': <GreyWaveSVG className={styles.wrapper}/>,
+    'navy': <NavyWaveSVG className={styles.wrapper}/>,
+    'pink': <PinkWaveSVG className={styles.wrapper}/>,
+    'sand': <SandWaveSVG className={styles.wrapper}/>,
+    'teal': <TealWaveSVG className={styles.wrapper}/>,
+}
+const renderSVG = color => SVGList[color] ? SVGList[color] : SVGList['blue'];
 export const WaveHeaderSection = ({children, color = 'blue', withPointer = false}) => {
-    const data = useStaticQuery(graphql`
-        query {
-            blueWave: file(relativePath: { eq: "wave-bg/blue-bg-wave-top.png" }) {
-                ...waveImage
-            }
-            greenWave: file(relativePath: { eq: "wave-bg/green-bg-wave-top.png" }) {
-                ...waveImage
-            }
-            greyWave: file(relativePath: { eq: "wave-bg/grey-bg-wave-top.png" }) {
-                ...waveImage
-            }
-            tealWave: file(relativePath: { eq: "wave-bg/teal-bg-wave-top.png" }) {
-                ...waveImage
-            }
-            sandWave: file(relativePath: { eq: "wave-bg/sand-bg-wave-top.png" }) {
-                ...waveImage
-            }
-            pinkWave: file(relativePath: { eq: "wave-bg/pink-bg-wave-top.png" }) {
-                ...waveImage
-            }
-            navyWave: file(relativePath: { eq: "wave-bg/navy-bg-wave-top.png" }) {
-                ...waveImage
-            }
-        }
-    `)
 
-    const image = getImage(data[`${color}Wave`])
     return (
         <section>
             <div className={styles.inner}>
@@ -56,7 +36,7 @@ export const WaveHeaderSection = ({children, color = 'blue', withPointer = false
                         quality={98}
                         alt=""
                     /> : null}
-                <GatsbyImage image={image} alt={''} className={styles.wrapper}/>
+                {renderSVG(color)}
             </div>
             <div className={styles[color]}>
                 <Container className={styles.container}>
