@@ -3,9 +3,9 @@ import {LineHeading} from "../LineHeading/LineHeading";
 import {Container} from "../Layout/Container/Container";
 import {SectionText} from "../SectionText/SectionText";
 import * as styles from "./WatchDesignsSection.module.css";
-import ShakeVideo from "../../videos/Shake-animate.mp4"
-import DrawVideo from "../../videos/Draw-animate2.mp4"
-import TextVideo from "../../videos/Text-animate.mp4"
+import ShakeVideo from "../../assets/videos/Shake-animate.mp4"
+import DrawVideo from "../../assets/videos/Draw-animate2.mp4"
+import TextVideo from "../../assets/videos/Text-animate.mp4"
 import DrawBtnSVG from "../../assets/svg/btn-draw.inline.svg";
 import ShakeBtnSVG from "../../assets/svg/btn-shake.inline.svg";
 import JiggleBtnSVG from "../../assets/svg/btn-jiggle.inline.svg";

@@ -1,7 +1,6 @@
 import React from 'react';
 import {WaveHeaderSection} from "../WaveHeaderSection/WaveHeaderSection";
 import * as styles from './SayHelloSection.module.css';
-import {StaticImage} from "gatsby-plugin-image";
 import HelloSVG from "../../assets/svg/hello.inline.svg";
 import ArrowSVG from "../../assets/svg/cards-arrow.inline.svg";
 import {UpgradeOrderBlock} from "../UpgradeOrderBlock/UpgradeOrderBlock";

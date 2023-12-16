@@ -3,7 +3,6 @@ import {LineHeading} from "../LineHeading/LineHeading";
 import {WaveHeaderSection} from "../WaveHeaderSection/WaveHeaderSection";
 import {SectionText} from "../SectionText/SectionText";
 import * as styles from './BestOfAllSection.module.css'
-import {StaticImage} from "gatsby-plugin-image";
 import BestSVG from "../../assets/svg/best-of-all.inline.svg";
 export const BestOfAllSection = () => (
     <WaveHeaderSection color={'grey'}>

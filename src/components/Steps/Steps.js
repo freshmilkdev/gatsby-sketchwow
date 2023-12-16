@@ -2,7 +2,7 @@ import React from 'react';
 import {StepRow} from "./StepRow";
 import {Container} from "../Layout/Container/Container";
 import * as styles from './Steps.module.css';
-import {StaticImage} from "gatsby-plugin-image";
+
 import {SectionText} from "../SectionText/SectionText";
 import StepsSVG from "../../assets/svg/steps-only.inline.svg";
 const steps = [

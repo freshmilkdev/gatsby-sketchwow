@@ -1,6 +1,5 @@
 import React from 'react';
 import * as styles from './Hero.module.css';
-import {StaticImage} from "gatsby-plugin-image";
 import SVG from "../../assets/svg/underline.inline.svg";
 
 export const HeroSubheading = ({text}) => (

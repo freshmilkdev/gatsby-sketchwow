@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "gatsby"
 import * as styles from "./UpgradeOrderButton.module.css";
-import {StaticImage} from "gatsby-plugin-image";
+
 import LeftArrowSVG from "../../../assets/svg/order-button-left-arrow.inline.svg";
 import RightArrowSVG from "../../../assets/svg/order-button-right-arrow.inline.svg";
 

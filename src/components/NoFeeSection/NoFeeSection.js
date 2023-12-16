@@ -5,7 +5,7 @@ import * as styles from './NoFeeSection.module.css'
 import {SectionText} from "../SectionText/SectionText";
 import {UpgradeOrderButton} from "../UpgradeOrderBlock/UpgradeOrderButton/UpgradeOrderButton";
 import {DashedText} from "../UpgradeOrderBlock/DashedText/DashedText";
-import ScreenshotVideo from "../../videos/screenshot-resized.mp4"
+import ScreenshotVideo from "../../assets/videos/screenshot-resized.mp4"
 import NoFeesSVG from "../../assets/svg/no-fees.inline.svg";
 import DevicesSVG from "../../assets/svg/product-devices-transparent-screen.inline.svg";
 

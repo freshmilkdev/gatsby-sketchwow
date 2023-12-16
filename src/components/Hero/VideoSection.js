@@ -1,5 +1,4 @@
 import React from 'react';
-import {StaticImage} from "gatsby-plugin-image";
 import * as styles from './Hero.module.css';
 
 import YellowLineSVG from "../../assets/svg/hero-video-yellow-line.inline.svg";
