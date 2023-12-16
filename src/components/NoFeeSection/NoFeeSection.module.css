@@ -11,6 +11,16 @@
     position: relative;
 }
 
+.imgWrapper {
+    text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+    .imgWrapper {
+        text-align: right;
+    }
+}
+
 .videoWrapper {
     position: absolute;
     top: 8%;
@@ -41,29 +51,35 @@
         width: 40vw;
         left: 33%;
     }
+
     .videoContainer video {
         max-width: 37vw;
     }
 }
+
 @media screen and (min-width: 1200px) {
     .videoWrapper {
         width: 40vw;
         left: 33%;
     }
+
     .videoContainer video {
         max-width: 37vw;
     }
 }
+
 @media screen and (min-width: 1300px) {
     .videoWrapper {
         width: 470px;
         height: auto;
         left: 36%;
     }
+
     .videoContainer video {
         max-width: 37vw;
     }
 }
+
 .image {
     max-width: 200px;
     margin: 20px 0;
@@ -95,4 +111,9 @@
     .row > * {
         width: 50%;
     }
+}
+
+.devicesImgWrapper {
+    position: relative;
+    overflow: hidden;
 }

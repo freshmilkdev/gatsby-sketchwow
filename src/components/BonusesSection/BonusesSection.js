@@ -2,9 +2,12 @@ import React from 'react';
 import {LineHeading} from "../LineHeading/LineHeading";
 import {WaveHeaderSection} from "../WaveHeaderSection/WaveHeaderSection";
 import {BonusRow} from "./BonusRow";
-import {StaticImage} from "gatsby-plugin-image";
-import * as styles from './BonusesSection.module.css';
 
+import * as styles from './BonusesSection.module.css';
+import BonusOne from "../../assets/svg/bonus-1.inline.svg";
+import BonusTwo from "../../assets/svg/bonus-2.inline.svg";
+import BonusOnePrice from "../../assets/svg/bonus-1-price.inline.svg";
+import BonusTwoPrice from "../../assets/svg/bonus-2-price.inline.svg";
 export const BonusesSection = () => (
     <WaveHeaderSection color={'sand'} withPointer>
         <LineHeading lineColor='blue'>
@@ -14,14 +17,7 @@ export const BonusesSection = () => (
             <BonusRow heading={'Animated Cartoon Character Maker'}
                       price={
                           <>
-                              <StaticImage
-                                  className={styles.priceImage}
-                                  src="../../images/bonus-1-price.png"
-                                  loading="lazy"
-                                  width={248}
-                                  quality={98}
-                                  alt=""
-                              />
+                              <BonusOnePrice className={styles.priceImage}/>
                               <span className={styles.priceValue}>$39 VALUE</span>
                           </>
                       }
@@ -37,25 +33,12 @@ export const BonusesSection = () => (
                               cartoons
                               to any of your animated sketches you create using SketchWow Animate</p>
                       </>}
-                      image={<StaticImage
-                          src="../../images/bonus-1.png"
-                          loading="lazy"
-                          width={468}
-                          quality={90}
-                          alt=""
-                      />}
+                      image={<BonusOne/>}
             />
             <BonusRow heading={'AI Animations & Presentations'}
                       price={
                           <>
-                              <StaticImage
-                                  className={styles.priceImage}
-                                  src="../../images/bonus-2-price.png"
-                                  loading="lazy"
-                                  width={241}
-                                  quality={98}
-                                  alt=""
-                              />
+                              <BonusTwoPrice className={styles.priceImage}/>
                               <div>
                                   <p className={'font-30 font-bold'}>**Coming Soon**</p>
                                   <p className={styles.priceValue}>$144/year value</p>
@@ -78,13 +61,7 @@ export const BonusesSection = () => (
                           </ul>
                           <p>Ok. Let’s wrap this up. It’s time to…</p>
                       </>}
-                      image={<StaticImage
-                          src="../../images/bonus-2.png"
-                          loading="lazy"
-                          width={585}
-                          quality={90}
-                          alt=""
-                      />}
+                      image={<BonusTwo/>}
             />
         </div>
     </WaveHeaderSection>);

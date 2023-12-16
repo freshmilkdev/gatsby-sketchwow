@@ -1,9 +1,19 @@
 import React from 'react';
 import {LineHeading} from "../LineHeading/LineHeading";
 import {Container} from "../Layout/Container/Container";
-import {StaticImage} from "gatsby-plugin-image";
+
 import {ReasonCard} from "./ReasonCard";
 import * as styles from './TenReasons.module.css';
+import CreateIcon from "../../assets/svg/reasons-icons/create.inline.svg";
+import AvoidIcon from "../../assets/svg/reasons-icons/avoid.inline.svg";
+import ClearlyIcon from "../../assets/svg/reasons-icons/clearly.inline.svg";
+import WhiteboardIcon from "../../assets/svg/reasons-icons/whiteboard-videos.inline.svg";
+import CreateCoolIcon from "../../assets/svg/reasons-icons/create-cool.inline.svg";
+import CreativityIcon from "../../assets/svg/reasons-icons/creativity.inline.svg";
+import FunIcon from "../../assets/svg/reasons-icons/fun.inline.svg";
+import MoreFunIcon from "../../assets/svg/reasons-icons/more-fun.inline.svg";
+import VisuallyIcon from "../../assets/svg/reasons-icons/visually.inline.svg";
+import ZeroIcon from "../../assets/svg/reasons-icons/zero.inline.svg";
 
 export const TenReasonsSection = () => (
     <section>
@@ -24,104 +34,44 @@ export const TenReasonsSection = () => (
 const reasons = [
     {
         title: <>Create Gorgeous, <br/> Catchy, Animated <br/> Visual Content</>,
-        icon: <StaticImage
-            src="../../images/reasons-icons/create-content.png"
-            loading="lazy"
-            width={148}
-            quality={100}
-            alt=""
-        />
+        icon: <CreateIcon/>
     },
     {
         title: <>Clearly Communicate <br/> Your Big Ideas With <br/> Motion</>,
-        icon: <StaticImage
-            src="../../images/reasons-icons/clearly-communicate.png"
-            loading="lazy"
-            width={148}
-            quality={100}
-            alt=""
-        />
+        icon: <ClearlyIcon/>
     },
     {
         title: <>Break-free From <br/>Typical Explainer, <br/> Doodle or Whiteboard <br/> Videos</>,
-        icon: <StaticImage
-            src="../../images/reasons-icons/whiteboard-videos.png"
-            loading="lazy"
-            width={148}
-            quality={100}
-            alt=""
-        />
+        icon: <WhiteboardIcon/>
     },
     {
         title: <>Avoid Overused Stock <br/> Videos Or Images That <br/> Get Ignored</>,
-        icon: <StaticImage
-            src="../../images/reasons-icons/avoid-stock.png"
-            loading="lazy"
-            width={148}
-            quality={100}
-            alt=""
-        />
+        icon: <AvoidIcon/>
     },
     {
         title: <>Make Fun, Personal, <br/> Creative Presentations <br/> Without That “Clinical” Look</>,
-        icon: <StaticImage
-            src="../../images/reasons-icons/make-fun.png"
-            loading="lazy"
-            width={148}
-            quality={100}
-            alt=""
-        />
+        icon: <FunIcon/>
     },
     {
         title: <>Visually Communicate <br/> Anything (With Motion) <br/> In a Unique Way</>,
-        icon: <StaticImage
-            src="../../images/reasons-icons/visually-communicate.png"
-            loading="lazy"
-            width={148}
-            quality={100}
-            alt=""
-        />
+        icon: <VisuallyIcon/>
     },
     {
         title: <>Zero Video Making or <br/> Animation Skills <br/> Required</>,
-        icon: <StaticImage
-            src="../../images/reasons-icons/zero-video-making.png"
-            loading="lazy"
-            width={148}
-            quality={100}
-            alt=""
-        />
+        icon: <ZeroIcon/>
     },
     {
         title: <>Create Cool, <br/> Captivating Animated <br/> Videos With Ease</>,
-        icon: <StaticImage
-            src="../../images/reasons-icons/create-tool.png"
-            loading="lazy"
-            width={148}
-            quality={100}
-            alt=""
-        />
+        icon: <CreateCoolIcon/>
     },
     {
         title: <>Add Creativity & <br/> Personality To Any <br/> Video</>,
-        icon: <StaticImage
-            src="../../images/reasons-icons/add-creativity.png"
-            loading="lazy"
-            width={148}
-            quality={100}
-            alt=""
-        />
+        icon: <CreativityIcon/>
     },
 
     {
         title: <>You could definitely <br/> use more FUN in your <br/> life (heck, who <br/> doesn’t?)</>,
-        icon: <StaticImage
-            src="../../images/reasons-icons/more-fun.png"
-            loading="lazy"
-            width={148}
-            quality={100}
-            alt=""
-        />
+        icon: <MoreFunIcon/>
     },
 
 ]

@@ -2,11 +2,12 @@ import React from 'react';
 import {LineHeading} from "../LineHeading/LineHeading";
 import {WaveHeaderSection} from "../WaveHeaderSection/WaveHeaderSection";
 import * as styles from './NoFeeSection.module.css'
-import {StaticImage} from "gatsby-plugin-image";
 import {SectionText} from "../SectionText/SectionText";
 import {UpgradeOrderButton} from "../UpgradeOrderBlock/UpgradeOrderButton/UpgradeOrderButton";
 import {DashedText} from "../UpgradeOrderBlock/DashedText/DashedText";
 import ScreenshotVideo from "../../videos/screenshot-resized.mp4"
+import NoFeesSVG from "../../assets/svg/no-fees.inline.svg";
+import DevicesSVG from "../../assets/svg/product-devices-transparent-screen.inline.svg";
 
 export const NoFeeSection = () => (
     <WaveHeaderSection color={'sand'} withPointer>
@@ -14,16 +15,7 @@ export const NoFeeSection = () => (
             <span><i>Woot! </i>No Pesky Monthly Subscription Fees</span>
         </LineHeading>
         <div className={styles.row}>
-            <div style={{textAlign: 'center'}}>
-                <StaticImage
-                    className={styles.image}
-                    src="../../images/no-fee.png"
-                    loading="lazy"
-                    width={396}
-                    quality={99}
-                    alt=""
-                />
-            </div>
+
             <SectionText textGap className={styles.text}>
                 <p>As you already know... most of the big software companies have made the switch to monthly
                     subscriptions. </p>
@@ -35,6 +27,9 @@ export const NoFeeSection = () => (
                     everyone else)...</p>
                 <p>Go take advantage of this <u>one-time</u> <strong>price of just $79!</strong></p>
             </SectionText>
+            <div className={styles.imgWrapper}>
+                <NoFeesSVG/>
+            </div>
         </div>
         <h3 className={`${styles.heading} font-24 font-black`}>Includes Free (Lifetime) Updates Too!</h3>
         <SectionText textGap style={{padding: '20px 0'}}>
@@ -54,13 +49,9 @@ export const NoFeeSection = () => (
                         <source src={ScreenshotVideo} type="video/mp4"/>
                     </video>
                 </div>
-                <StaticImage
-                    src="../../images/product-devices-transparent-screen.png"
-                    loading="lazy"
-                    width={1178}
-                    quality={99}
-                    alt=""
-                />
+                <div className={styles.devicesImgWrapper}>
+                    <div><DevicesSVG/></div>
+                </div>
             </div>
         </div>
         <UpgradeOrderButton link={'/'} afterText={'I want to add SketchWow Animate for a one-time fee of just $79.'}/>

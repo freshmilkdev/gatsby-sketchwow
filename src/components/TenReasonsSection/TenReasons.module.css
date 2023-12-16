@@ -31,7 +31,9 @@
     left: 0;
     right: 0;
 }
-
+.imgWrapper > div {
+   display: inline-block;
+}
 @media screen and (max-width: 1200px) {
     .imgWrapper {
         top: -55px;

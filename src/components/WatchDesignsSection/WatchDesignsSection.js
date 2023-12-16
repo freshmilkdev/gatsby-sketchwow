@@ -3,10 +3,14 @@ import {LineHeading} from "../LineHeading/LineHeading";
 import {Container} from "../Layout/Container/Container";
 import {SectionText} from "../SectionText/SectionText";
 import * as styles from "./WatchDesignsSection.module.css";
-import {StaticImage} from "gatsby-plugin-image";
 import ShakeVideo from "../../videos/Shake-animate.mp4"
 import DrawVideo from "../../videos/Draw-animate2.mp4"
 import TextVideo from "../../videos/Text-animate.mp4"
+import DrawBtnSVG from "../../assets/svg/btn-draw.inline.svg";
+import ShakeBtnSVG from "../../assets/svg/btn-shake.inline.svg";
+import JiggleBtnSVG from "../../assets/svg/btn-jiggle.inline.svg";
+import PointerLeftSVG from "../../assets/svg/pointer-left.inline.svg";
+import PointerRightSVG from "../../assets/svg/pointer-right.inline.svg";
 
 export const WatchDesignsSection = () => (
     <section className={styles.section}>
@@ -23,43 +27,15 @@ export const WatchDesignsSection = () => (
                     <video width="100%" loop autoPlay muted playsInline>
                         <source src={DrawVideo} type="video/mp4"/>
                     </video>
-                    <StaticImage
-                        className={styles.image}
-                        src="../../images/btn-draw.png"
-                        loading="lazy"
-                        width={164}
-                        quality={98}
-                        alt=""
-                    />
-                    <StaticImage
-                        className={styles.pointerLeft}
-                        src="../../images/pointer-left.png"
-                        loading="lazy"
-                        width={76}
-                        quality={98}
-                        alt=""
-                    />
+                    <DrawBtnSVG className={styles.image}/>
+                    <PointerLeftSVG className={styles.pointerLeft}/>
                 </div>
                 <div>
                     <video width="100%" loop autoPlay muted playsInline>
                         <source src={ShakeVideo} type="video/mp4"/>
                     </video>
-                    <StaticImage
-                        className={styles.image}
-                        src="../../images/btn-shake.png"
-                        loading="lazy"
-                        width={164}
-                        quality={98}
-                        alt=""
-                    />
-                    <StaticImage
-                        className={styles.pointerRight}
-                        src="../../images/pointer-right.png"
-                        loading="lazy"
-                        width={66}
-                        quality={98}
-                        alt=""
-                    />
+                    <ShakeBtnSVG className={styles.image}/>
+                    <PointerRightSVG className={styles.pointerRight}/>
                 </div>
 
             </div>
@@ -73,22 +49,8 @@ export const WatchDesignsSection = () => (
                     <video width="100%" loop autoPlay muted playsInline>
                         <source src={TextVideo} type="video/mp4"/>
                     </video>
-                    <StaticImage
-                        className={styles.btnJiggle}
-                        src="../../images/btn-jiggle.png"
-                        loading="lazy"
-                        width={264}
-                        quality={98}
-                        alt=""
-                    />
-                    <StaticImage
-                        className={styles.pointerJiggle}
-                        src="../../images/pointer-left.png"
-                        loading="lazy"
-                        width={76}
-                        quality={98}
-                        alt=""
-                    />
+                    <JiggleBtnSVG className={styles.btnJiggle}/>
+                    <PointerLeftSVG className={styles.pointerJiggle}/>
                 </div>
             </div>
             <SectionText>

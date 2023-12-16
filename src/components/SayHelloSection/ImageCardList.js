@@ -1,18 +1,12 @@
 import React from 'react';
 import {ImageCard} from "./ImageCard/ImageCard";
-import {StaticImage} from "gatsby-plugin-image";
 
+import SkullSVG from "../../assets/svg/skull-circle.inline.svg";
+import LaptopSVG from "../../assets/svg/laptop-circle.inline.svg";
 
 export const ImageCardList = () => (
     <>
-        <ImageCard image={
-            <StaticImage
-                src="../../images/skull-circle.png"
-                loading="lazy"
-                width={432}
-                quality={95}
-                alt=""
-            />}
+        <ImageCard image={<SkullSVG/>}
                    heading={'No More Death-By-Power Point...  Like Ever'}
                    content={<>
                        <p>Plus, adding SketchWow Animate makes SkechWow even MORE fun to use. <br/>
@@ -29,14 +23,7 @@ export const ImageCardList = () => (
                        </p>
                    </>}
         />
-        <ImageCard image={
-            <StaticImage
-                src="../../images/laptop-circle.png"
-                loading="lazy"
-                width={432}
-                quality={95}
-                alt=""
-            />}
+        <ImageCard image={<LaptopSVG/>}
                    heading={'How Does SketchWow Animate Work?'}
                    content={<>
                        <p>Once you purchase the SketchWow Animate add-on, a new “Animate” button will be
@@ -50,6 +37,5 @@ export const ImageCardList = () => (
                        </p>
                    </>}
         />
-
     </>
 );

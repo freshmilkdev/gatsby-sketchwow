@@ -4,6 +4,9 @@
 
 .image {
     left: -24px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
 }
 
 .imgWrapper {

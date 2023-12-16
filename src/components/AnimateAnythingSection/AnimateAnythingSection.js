@@ -2,9 +2,14 @@ import React from 'react';
 import {WaveHeaderSection} from "../WaveHeaderSection/WaveHeaderSection";
 import {LineHeading} from "../LineHeading/LineHeading";
 import * as styles from './AnimateAnythingSection.module.css'
-import {StaticImage} from "gatsby-plugin-image";
 
-
+import Click1SVG from "../../assets/svg/click1.inline.svg";
+import Click2SVG from "../../assets/svg/click2.inline.svg";
+import PointerLeftSVG from "../../assets/svg/pointer-left.inline.svg";
+import PointerRightSVG from "../../assets/svg/pointer-right.inline.svg";
+import LeftImageSVG from "../../assets/svg/two-clicks-left.inline.svg";
+import RightImageSVG from "../../assets/svg/two-clicks-right.inline.svg";
+import BubbleSVG from "../../assets/svg/two-clicks-right-bubble.inline.svg";
 export const AnimateAnythingSection = () => (
     <WaveHeaderSection color={'green'}>
         <LineHeading lineColor='green'>
@@ -15,75 +20,33 @@ export const AnimateAnythingSection = () => (
         <div className={`${styles.clicks} font-24 font-bold`}>
             <div>
                 <div className={styles.click}>
-                    <StaticImage
-                        className={styles.image}
-                        src="../../images/click1.png"
-                        loading="lazy"
-                        width={149}
-                        quality={95}
-                        alt=""
-                    />
+                    <Click1SVG className={styles.image}/>
                     <p>Highlight An Element On The Canvas</p>
                 </div>
                 <div className={styles.leftWrapper}>
-                    <StaticImage
-                        src="../../images/2clicks-left.png"
-                        loading="lazy"
-                        width={782}
-                        quality={98}
-                        alt=""
-                    />
-                    <StaticImage
+                    <LeftImageSVG/>
+                    <PointerLeftSVG
                         className={styles.leftGraphics}
                         style={{position: 'absolute'}}
-                        src="../../images/pointer-left.png"
-                        loading="lazy"
-                        width={76}
-                        quality={100}
-                        alt=""
                     />
                 </div>
             </div>
             <div className={styles.rightCol}>
                 <div className={styles.click}>
-                    <StaticImage
-                        className={styles.image}
-                        src="../../images/click2.png"
-                        loading="lazy"
-                        width={151}
-                        quality={95}
-                        alt=""
-                    />
+                    <Click2SVG className={styles.image}/>
                     <p>Choose Your Animation Effect</p>
                 </div>
                 <div className={styles.rightWrapper}>
-                    <StaticImage
-                        src="../../images/2clicks-right.png"
-                        loading="lazy"
-                        width={715}
-                        quality={100}
-                        alt=""
-                    />
-                    <StaticImage
+                    <RightImageSVG/>
+                    <PointerRightSVG
                         className={styles.rightGraphics}
                         style={{position: 'absolute'}}
-                        src="../../images/pointer-right.png"
-                        loading="lazy"
-                        width={66}
-                        quality={100}
-                        alt=""
                     />
                 </div>
             </div>
         </div>
 
         <div className={styles.bubble}>
-            <StaticImage
-                src="../../images/2clicks-right-bubble.png"
-                loading="lazy"
-                width={396}
-                quality={100}
-                alt=""
-            />
+            <BubbleSVG/>
         </div>
     </WaveHeaderSection>);

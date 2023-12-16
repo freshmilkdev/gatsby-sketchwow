@@ -2,15 +2,16 @@ import React from 'react';
 import {LineHeading} from "../LineHeading/LineHeading";
 import {WaveHeaderSection} from "../WaveHeaderSection/WaveHeaderSection";
 import {SectionText} from "../SectionText/SectionText";
-import {StaticImage} from "gatsby-plugin-image";
-
+import TestDriveSVG from "../../assets/svg/test-drive.inline.svg";
+import SpeakerSVG from "../../assets/svg/speaker.inline.svg";
 import * as styles from './TestDriveSection.module.css'
 import {UpgradeOrderButton} from "../UpgradeOrderBlock/UpgradeOrderButton/UpgradeOrderButton";
 
 export const TestDriveSection = () => (
     <WaveHeaderSection color={'pink'} withPointer>
         <LineHeading lineColor='red'>
-            <span>Start Creating <br className='mobile-only'/>Not-So-Perfect <br/><u>Animations That Stand Out!</u></span>
+            <span>Start Creating <br
+                className='mobile-only'/>Not-So-Perfect <br/><u>Animations That Stand Out!</u></span>
         </LineHeading>
         <SectionText textGap className={styles.text}>
             <p>It’s no secret...</p>
@@ -30,14 +31,12 @@ export const TestDriveSection = () => (
         </LineHeading>
         <div className={styles.row}>
             <div className={styles.imgWrapper}>
-                <StaticImage
-                    className={styles.image}
-                    src="../../images/test-drive.png"
-                    loading="lazy"
-                    width={785}
-                    quality={100}
-                    alt=""
-                />
+                <div>
+                    <TestDriveSVG
+                        className={styles.image}
+
+                    />
+                </div>
             </div>
             <SectionText textGap style={{textAlign: 'left'}}>
                 <p>All I’m asking you to do today is say “...maybe”</p>
@@ -65,14 +64,7 @@ export const TestDriveSection = () => (
             <p>Here are a couple more reasons why <u>this is an amazing must-have deal!</u></p>
         </SectionText>
         <div className={styles.speakerWrapper}>
-            <StaticImage
-                className={styles.speakerImage}
-                src="../../images/speaker-icon.png"
-                loading="lazy"
-                width={124}
-                quality={95}
-                alt=""
-            />
+            <SpeakerSVG className={styles.speakerImage}/>
         </div>
     </WaveHeaderSection>
 );

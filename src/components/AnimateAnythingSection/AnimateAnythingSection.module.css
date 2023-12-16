@@ -69,7 +69,11 @@
         /*align-items: center;*/
         justify-content: space-between;
     }
-
+    .clicks > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .click {
         padding: 50px 0 50px 152px;
         position: relative;
@@ -91,7 +95,7 @@
 @media screen and (min-width: 1300px) {
     .leftGraphics {
         max-width: initial;
-        bottom: 70px;
+        bottom: 50px;
         left: -60px;
     }
 }

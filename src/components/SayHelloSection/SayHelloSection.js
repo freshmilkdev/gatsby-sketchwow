@@ -2,7 +2,8 @@ import React from 'react';
 import {WaveHeaderSection} from "../WaveHeaderSection/WaveHeaderSection";
 import * as styles from './SayHelloSection.module.css';
 import {StaticImage} from "gatsby-plugin-image";
-
+import HelloSVG from "../../assets/svg/hello.inline.svg";
+import ArrowSVG from "../../assets/svg/cards-arrow.inline.svg";
 import {UpgradeOrderBlock} from "../UpgradeOrderBlock/UpgradeOrderBlock";
 
 import {LineHeading} from "../LineHeading/LineHeading";
@@ -13,15 +14,7 @@ export const SayHelloSection = () => (
     <WaveHeaderSection color={'blue'}>
         <LineHeading>
             <span>Say Hello To Your New BFF...</span>
-            <StaticImage
-                style={{position: "absolute"}}
-                className={styles.headingHello}
-                src="../../images/hello.png"
-                loading="lazy"
-                width={189}
-                quality={95}
-                alt=""
-            />
+            <HelloSVG style={{position: "absolute"}} className={styles.headingHello}/>
         </LineHeading>
         <h3 className={`${styles.subheading} font-30`}>SketchWow Animate!</h3>
         <SectionText className={`${styles.text} font-20`}>
@@ -40,14 +33,7 @@ export const SayHelloSection = () => (
         <div className={styles.bottomWrapper}>
             <p className={`${styles.know} font-18`} style={{fontWeight: 700}}>Know what that means?</p>
             <ImageCardList/>
-            <StaticImage
-                className={styles.arrow}
-                src="../../images/cards-arrow.png"
-                loading="lazy"
-                width={119}
-                quality={95}
-                alt=""
-            />
+            <ArrowSVG className={styles.arrow}/>
         </div>
     </WaveHeaderSection>
 );

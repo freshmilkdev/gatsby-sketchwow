@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="76" height="92" viewBox="0 0 76 92">
+  <defs>
+    <style>
+      .pointer-l-1 {
+        fill: #26030c;
+      }
+
+      .pointer-l-1, .pointer-l-2, .pointer-l-3 {
+        fill-rule: evenodd;
+      }
+
+      .pointer-l-2 {
+        fill: #fae939;
+      }
+
+      .pointer-l-3 {
+        fill: #f1134e;
+      }
+    </style>
+  </defs>
+  <g>
+    <path d="M17.009,42.053 L-0.000,70.340 L75.732,92.000 L17.009,42.053 Z" class="pointer-l-1"/>
+    <path d="M5.710,69.383 L18.794,47.625 L63.960,86.042 L5.710,69.383 Z" class="pointer-l-2"/>
+    <path d="M43.319,-0.001 L76.000,85.531 L18.962,23.104 L43.319,-0.001 Z" class="pointer-l-1"/>
+    <path d="M25.463,26.136 L44.268,8.296 L69.500,74.331 L25.463,26.136 Z" class="pointer-l-3"/>
+  </g>
+</svg>

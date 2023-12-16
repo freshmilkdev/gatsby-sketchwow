@@ -22,11 +22,13 @@
 
 
 .leftImage {
+    max-width: 50px;
     left: -36px;
     top: -45px;
 }
 
 .rightImage {
+    max-width: 38px;
     right: -46px;
     bottom: 2px;
 }

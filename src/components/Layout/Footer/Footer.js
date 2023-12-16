@@ -1,9 +1,9 @@
 import React from 'react';
 import {WaveHeaderSection} from "../../WaveHeaderSection/WaveHeaderSection";
-import {StaticImage} from "gatsby-plugin-image";
+
 import * as styles from './Footer.module.css';
 import {Link} from "gatsby";
-
+import LogoSVG from "../../../assets/svg/logo-footer.inline.svg";
 const navLinks = [
     {title: 'Privacy Policy', path: '/'},
     {title: 'Terms of Service', path: '/'},
@@ -17,14 +17,7 @@ export const Footer = () => (
         <footer className={styles.footer}>
             <div className={styles.logo}>
                 <Link to={'/'}>
-                    <StaticImage
-                        className={styles.image}
-                        src="../../../images/logo-white.png"
-                        loading="lazy"
-                        width={313}
-                        quality={100}
-                        alt="SketchWOW"
-                    />
+                    <LogoSVG className={styles.image}/>
                 </Link>
             </div>
             <nav className={styles.navigation}>

@@ -1,44 +1,27 @@
 import React from 'react';
 
 import * as styles from "./LineHeading.module.css";
-import {GatsbyImage, getImage} from "gatsby-plugin-image";
-import {graphql, useStaticQuery} from "gatsby";
 
-export const fluidImage = graphql`
-    fragment wavyLineImage on File {
-        childImageSharp {
-            gatsbyImageData(
-                width: 268
-                placeholder: BLURRED
-            )
-        }
-    }
-`;
+import BlueLineSVG from "../../assets/svg/wavy-lines/wavy-blue-line.inline.svg";
+import GreenLineSVG from "../../assets/svg/wavy-lines/wavy-green-line.inline.svg";
+import PurpleLineSVG from "../../assets/svg/wavy-lines/wavy-purple-line.inline.svg";
+import RedLineSVG from "../../assets/svg/wavy-lines/wavy-red-line.inline.svg";
+import YellowLineSVG from "../../assets/svg/wavy-lines/wavy-yellow-line.inline.svg";
+
+const SVGList = {
+    blue: <BlueLineSVG className={styles.headingImageLine}/>,
+    green: <GreenLineSVG className={styles.headingImageLine}/>,
+    purple: <PurpleLineSVG className={styles.headingImageLine}/>,
+    red: <RedLineSVG className={styles.headingImageLine}/>,
+    yellow: <YellowLineSVG className={styles.headingImageLine}/>
+}
+const renderSVG = color => SVGList[color] ? SVGList[color] : SVGList['blue'];
 export const LineHeading = ({lineColor = 'blue', tag = 'h2', children}) => {
-    const data = useStaticQuery(graphql`
-        query {
-            blue: file(relativePath: { eq: "wavy-lines/wavy-blue-line.png" }) {
-                ...wavyLineImage
-            }
-            green: file(relativePath: { eq: "wavy-lines/wavy-green-line.png" }) {
-                ...wavyLineImage
-            }
-            yellow: file(relativePath: { eq: "wavy-lines/wavy-yellow-line.png" }) {
-                ...wavyLineImage
-            }
-            purple: file(relativePath: { eq: "wavy-lines/wavy-purple-line.png" }) {
-                ...wavyLineImage
-            }
-            red: file(relativePath: { eq: "wavy-lines/wavy-red-line.png" }) {
-                ...wavyLineImage
-            }
-        }
-    `)
-    const image = getImage(data[lineColor]);
+
     const Tag = tag;
     return (
         <Tag className={`${styles.heading} font-55`}>
-            <GatsbyImage className={styles.headingImageLine} image={image} alt={''}/>
+            {renderSVG(lineColor)}
             {children}
         </Tag>
     );

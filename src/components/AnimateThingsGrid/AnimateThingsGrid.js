@@ -2,9 +2,18 @@ import React from 'react';
 import * as styles from './AnimateThingsGrid.module.css'
 import {Container} from "../Layout/Container/Container";
 import {LineHeading} from "../LineHeading/LineHeading";
-import {StaticImage} from "gatsby-plugin-image";
-import {ThingItem} from "./ThingItem";
 
+import {ThingItem} from "./ThingItem";
+import AnimatedTextIcon from "../../assets/svg/features-icons/animated-text.inline.svg";
+import AnimatedContentIcon from "../../assets/svg/features-icons/animated-content.inline.svg";
+import ShakyIcon from "../../assets/svg/features-icons/shaky-animation.inline.svg";
+import YTIcon from "../../assets/svg/features-icons/yt.inline.svg";
+import MultiIcon from "../../assets/svg/features-icons/multi-page.inline.svg";
+import AdsIcon from "../../assets/svg/features-icons/animated-ads.inline.svg";
+import PostsIcon from "../../assets/svg/features-icons/animated-posts.inline.svg";
+import NonTypicalIcon from "../../assets/svg/features-icons/non-typical.inline.svg";
+import WebinarIcon from "../../assets/svg/features-icons/webinar-slides.inline.svg";
+import SlidesIcon from "../../assets/svg/features-icons/animated-slides.inline.svg";
 export const AnimateThingsGrid = () => (
     <section className={styles.section}>
         <Container>
@@ -21,102 +30,42 @@ export const AnimateThingsGrid = () => (
 const things = [
     {
         title: 'Animated Text Videos',
-        icon: <StaticImage
-            src="../../images/features-icons/animated-text.png"
-            loading="lazy"
-            width={145}
-            quality={95}
-            alt=""
-        />
+        icon: <AnimatedTextIcon/>
     },
     {
         title: 'Animated Content',
-        icon: <StaticImage
-            src="../../images/features-icons/animated-content.png"
-            loading="lazy"
-            width={145}
-            quality={95}
-            alt=""
-        />
+        icon: <AnimatedContentIcon/>
     },
     {
         title: 'Shaky Animation',
-        icon: <StaticImage
-            src="../../images/features-icons/shaky-animation.png"
-            loading="lazy"
-            width={145}
-            quality={95}
-            alt=""
-        />
+        icon: <ShakyIcon/>
     },
     {
         title: 'YouTube Videos',
-        icon: <StaticImage
-            src="../../images/features-icons/yt-videos.png"
-            loading="lazy"
-            width={145}
-            quality={95}
-            alt=""
-        />
+        icon: <YTIcon/>
     },
     {
         title: 'Multi-page, Animated Videos',
-        icon: <StaticImage
-            src="../../images/features-icons/multi-page.png"
-            loading="lazy"
-            width={145}
-            quality={95}
-            alt=""
-        />
+        icon: <MultiIcon/>
     },
     {
         title: 'Animated Ads',
-        icon: <StaticImage
-            src="../../images/features-icons/animated-ads.png"
-            loading="lazy"
-            width={145}
-            quality={95}
-            alt=""
-        />
+        icon: <AdsIcon/>
     },
     {
         title: 'Animated Social Posts',
-        icon: <StaticImage
-            src="../../images/features-icons/animated-posts.png"
-            loading="lazy"
-            width={145}
-            quality={95}
-            alt=""
-        />
+        icon: <PostsIcon/>
     },
     {
         title: 'Non Typical Explainer Videos',
-        icon: <StaticImage
-            src="../../images/features-icons/non-typical.png"
-            loading="lazy"
-            width={145}
-            quality={95}
-            alt=""
-        />
+        icon: <NonTypicalIcon/>
     },
     {
         title: 'Webinar Slides (Live Or Pre-recorded)',
-        icon: <StaticImage
-            src="../../images/features-icons/webinar-slides.png"
-            loading="lazy"
-            width={145}
-            quality={95}
-            alt=""
-        />
+        icon: <WebinarIcon/>
     },
     {
         title: 'Animated (automated) Slides/ Presentations',
-        icon: <StaticImage
-            src="../../images/features-icons/animated-slides.png"
-            loading="lazy"
-            width={145}
-            quality={95}
-            alt=""
-        />
+        icon: <SlidesIcon/>
     }
 ]

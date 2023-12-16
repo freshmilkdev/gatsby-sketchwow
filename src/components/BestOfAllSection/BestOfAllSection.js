@@ -4,7 +4,7 @@ import {WaveHeaderSection} from "../WaveHeaderSection/WaveHeaderSection";
 import {SectionText} from "../SectionText/SectionText";
 import * as styles from './BestOfAllSection.module.css'
 import {StaticImage} from "gatsby-plugin-image";
-
+import BestSVG from "../../assets/svg/best-of-all.inline.svg";
 export const BestOfAllSection = () => (
     <WaveHeaderSection color={'grey'}>
         <LineHeading lineColor='purple'>
@@ -18,13 +18,7 @@ export const BestOfAllSection = () => (
             <p>Here’s an example of the included settings:</p>
         </SectionText>
         <div className='text-center'>
-            <StaticImage
-                src="../../images/best-of-all.png"
-                loading="lazy"
-                width={753}
-                quality={90}
-                alt=""
-            />
+            <BestSVG/>
         </div>
     </WaveHeaderSection>
 );
